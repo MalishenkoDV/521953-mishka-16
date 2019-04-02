@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Dmytro Malishenko](https://up.htmlacademy.ru/adaptive/16/user/521953).
-* Наставник: `Неизвестно`.
+* Наставник: `Anton Popov`.
 
 ---
 

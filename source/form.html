@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="#" alt="#"></a>
+      <button class="btn btn-burger" type="button"></button>
+      <ul>
+        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li><a href="#">Вязание на заказ</a></li>
+        <li><a href="#">Поиск по сайту</a></li>
+        <li><a href="#">Корзина: пока пуста</a></li>
+      </ul>
+    </header>
+    <main>
+      <h1>Вязание на заказ</h1>
+      <form action="post">
+        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами чтобы уточнить детали.</p>
+        <fieldset>
+          <legend>Тип</legend>
+          <label><input type="radio">Аксессуар для  интерьера</label>
+          <label><input type="radio">Детская игрушка</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>ЦВет</legend>
+          <label><input type="checkbox" checked>Белый</label>
+          <label><input type="checkbox" checked>Серый</label>
+          <label><input type="checkbox">«Тиффани»</label>
+          <label><input type="checkbox">Черный</label>
+          <label><input type="checkbox">Розовый</label>
+          <label><input type="checkbox">Оранжевый</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>ФИО</legend>
+          <label class="in-popup-form">Имя:
+            <input type="text" name="name" placeholder="Введите ваше имя*" required>
+          </label>
+          <label class="in-popup-form">Фамилия:
+            <input type="text" name="name" placeholder="Укажите фамилию*" required>
+          </label>
+          <label class="in-popup-form">Отчество:
+            <input type="text" name="name" placeholder="Отчество, если желаете" required>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>тел</legend>
+          <label><input type="tel" id="phone" name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+            required></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>E-mail</legend>
+          <label><input type="email" placeholder="Ваш Email*" required></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Доп</legend>
+          <label>Текст письма:
+              <textarea name="emailtext" rows="3" cols="40" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </label>
+        </fieldset>
+        <span>*Поля обязательны для заполнения</span>
+        <button type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+      </form>
+    </main>
+    <footer>
+        <ul>
+          <li><a class="social-btn social-btn-inst" target="_blank" href="https://www.instagram.com/htmlacademy/">instagram</a></li>
+          <li><a class="social-btn social-btn-fb" target="_blank" href="https://www.facebook.com/htmlacademy">facebook</a></li>
+          <li><a class="social-btn social-btn-twit" target="_blank" href="https://twitter.com/htmlacademy_ru">twiter</a></li>
+        </ul>
+        <span>
+          <a href="https://htmlacademy.ru/intensive/adaptive">Разработано <img src="#" alt="#"></a>
+        </span>
+      </footer>
+  </body>
+</html>

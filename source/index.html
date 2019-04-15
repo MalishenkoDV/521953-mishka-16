@@ -19,17 +19,17 @@
         <button class="btn btn-burger" type="button"></button>
       </div>
       <ul class="header__nav list">
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li><a href="form.html">Вязание на заказ</a></li>
+        <li><a class="nav__item" href="catalog.html">Каталог товаров</a></li>
+        <li><a class="nav__item" href="form.html">Вязание на заказ</a></li>
       </ul>
-      <ul class="header__nav list">
-        <li><a href="#">Поиск по сайту</a></li>
-        <li><a href="#">Корзина: пока пуста</a></li>
+      <ul class="header__nav list">x
+        <li><a class="nav__item" href="serch.html">Поиск по сайту</a></li>
+        <li><a class="nav__item" href="cart.html">Корзина: пока пуста</a></li>
       </ul>
     </header>
 
     <main class="main">
-      <div class="main__theme-site">
+      <div class="main__theme-site theme-site">
         <ul class="theme-site__list list">
           <li>Новые поступления</li>
           <li>Распродажа</li>
@@ -39,11 +39,11 @@
         </ul>
         <h1 class="theme-site__slogan">Милые штуки ручной  работы для дома</h1>
       </div>
-      <section class="main__category">
-        <div class="category category--01">
+      <section class="main__category category">
+        <div class="category--01">
           <p class="category--text">Предметы  интерьера</p>
         </div>
-        <div class="category category--02">
+        <div class="category--02">
           <p class="category--text">Детские  игрушки</p>
         </div>
       </section>
@@ -51,7 +51,7 @@
       <section class="product">
         <span class="product__name">
           <h3 class="product__name--denotation">Вязаные корзинки</h3>
-          <h6 class="product__name--attribute">ТОВАР НЕДЕЛИ</h6>
+          <h6 class="product__name--attribute">Товар недели</h6>
         </span>
         <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="product__table">
@@ -77,7 +77,7 @@
         <div>
           <h3 class="about-us__title">Коротко о нас:</h3>
           <ul class="about-us__features-list">
-            <li class="about-us">Экологически  чистые материалы</li>
+            <li class="about-us">Экологически чистые материалы</li>
             <li class="about-us">Скандинавский стиль  по российской цене</li>
             <li class="about-us">Увеличивает лайки на фотографиях</li>
             <li class="about-us">Связано вручную с  любовью и умилением</li>
@@ -129,22 +129,22 @@
         <li><a class="social-btn social-btn-twit" target="_blank" href="https://twitter.com/htmlacademy_ru">twiter</a></li>
       </ul>
       <span class="footer__copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive">Разработано <img src="#" alt="#"></a>
+        <a href="https://htmlacademy.ru/intensive/adaptive">Разработано <img src="#" alt="Заходите на HTMLAcademy.ru"></a>
       </span>
     </footer>
 
     <div class="popup">
-      <h3>Добавить  в корзину</h3>
-      <p>Выберите размер:</p>
-      <dl>
-        <dt>S</dt>
-        <dd>Маленький</dd>
-        <dt>M</dt>
-        <dd>Средний</dd>
-        <dt>L</dt>
-        <dd>Большой</dd>
+      <h3 class="popup__title">Добавить  в корзину</h3>
+      <p class="popup__text">Выберите размер:</p>
+      <dl class="popup__def-list">
+        <dt class="popup__def-title">S</dt>
+        <dd class="popup__def-discription">Маленький</dd>
+        <dt class="popup__def-title">M</dt>
+        <dd class="popup__def-discription">Средний</dd>
+        <dt class="popup__def-title">L</dt>
+        <dd class="popup__def-discription">Большой</dd>
       </dl>
-      <a href="cart.html"></a>
+      <a class="popu__btn btn" href="cart.html"></a>
     </div>
   </body>
 </html>

@@ -137,12 +137,12 @@
     <div class="popup">
       <h3 class="popup__title">Добавить  в корзину</h3>
       <p class="popup__text">Выберите размер:</p>
-      <fieldset>
+      <form class="pupup__form" id="popup-form">
         <label class="popup__checkbox-label" aria-label="Маленький"><input class="popup__checkbox" type="checkbox" checked>S</label>
         <label class="popup__checkbox" aria-label="Средний"><input class="popup__checkbox-label" type="checkbox">M</label>
         <label class="popup__checkbox" aria-label="Большой"><input class="popup__checkbox-label" type="checkbox">L</label>
-      </fieldset>
-      <a class="popup__btn btn" href="cart.html"></a>
+      </form>
+      <button class="popup__btn btn" type="submit" form="popup-form"></button>
     </div>
   </body>
 </html>

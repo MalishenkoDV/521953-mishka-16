@@ -13,51 +13,57 @@
     <title>HTML Academy: Мишка -Предлагаем народное искуство! "Налитай, торопись! Раскупай живопись!"</title>
   </head>
   <body>
-    <header>
-      <a href="index.html"><img src="#" alt="Мишка. Магазин вещей, сделанных врукопашную!"></a>
-      <button class="btn btn-burger" type="button"></button>
-      <ul>
-        <li><a href="#">Каталог товаров</a></li>
-        <li><a href="form.html">Вязание на заказ</a></li>
-        <li><a href="#">Поиск по сайту</a></li>
-        <li><a href="#">Корзина: пока пуста</a></li>
+    <header class="header">
+      <div class="logo-wrapper">
+          <a href="index.html"><img class="header__logo" src="#" alt="Мишка. Магазин вещей, сделанных врукопашную!"></a>
+        <button class="btn btn-burger" type="button"></button>
+      </div>
+      <ul class="header__nav nav">
+        <li><a class="nav__item" href="catalog.html">Каталог товаров</a></li>
+        <li><a class="nav__item" href="form.html">Вязание на заказ</a></li>
+      </ul>
+      <ul class="header__nav nav">
+        <li><a class="nav__item" href="serch.html">Поиск по сайту</a></li>
+        <li><a class="nav__item" href="cart.html">Корзина: пока пуста</a></li>
       </ul>
     </header>
+
     <main class="main">
       <h1 class="main__title">Каталог товаров</h1>
       <div class="main__catalog catalog">
-        <div class="catalog__cart">
-          <img class="cart__img" src="img/#" alt="Ушастый лушпай, у которого отняли морковку вегатериацы.">
-          <div class="cart__description">
-            <h6 class="cart__title">Зайчик-попрыгайчик</h6>
-            <p class="cart__characteristics">Рост 30 см, вес 200 г</p>
-            <hr class="cart__hr">
-            <span class="cart__price">1 200 руб.</span>
+        <div class="catalog__card card">
+          <img class="card__img" src="img/#" alt="Ушастый лушпай, у которого отняли морковку вегатериацы.">
+          <div class="card__description">
+            <h6 class="card__title">Зайчик-попрыгайчик</h6>
+            <p class="card__characteristics">Рост 30 см, вес 200 г</p>
+            <span class="card__price">1 200 руб.</span>
+            <a href="cart.html"><img src="#" alt="Добавитьв корзину"></a>
           </div>
         </div>
 
-        <div>
-          <img src="img/#" alt="Вязаный тазик, в который белье постельное не поместится. Разве что вертиканьно.">
-          <div>
-            <h6>Корзинка для белья</h6>
-            <p>Диаметр 15 см, высота 10 см</p>
-            <hr>
-            <span>690 руб.</span>
+        <div class="catalog__card card">
+          <img class="card__img" src="img/#" alt="Вязаный тазик, в который белье постельное не поместится. Разве что вертиканьно.">
+          <div class="card__description">
+            <h6 class="card__title">Корзинка для белья</h6>
+            <p class="card__characteristics">Диаметр 15 см, высота 10 см</p>
+            <span class="card__price">690 руб.</span>
+            <a href="cart.html"><img src="#" alt="Добавитьв корзину"></a>
           </div>
         </div>
 
-        <div>
-          <img src="img/#" alt="Чуть меньше мусорки и покрасиве. Вы ведь не будете ставить мусорку себе на стол на видное место? А это - будете!">
-          <div>
-            <h6>Большая корзинка для игрушек</h6>
-            <p>Диаметр 30 см, высота 30 см</p>
+        <div class="catalog__card card">
+          <img class="card__img" src="img/#" alt="Чуть меньше мусорки и покрасиве. Вы ведь не будете ставить мусорку себе на стол на видное место? А это - будете!">
+          <div class="card__description">
+            <h6 class="card__title">Большая корзинка для игрушек</h6>
+            <p class="card__characteristics">Диаметр 30 см, высота 30 см</p>
             <hr>
-            <span>1 500 руб.</span>
+            <span class="card__price">1 500 руб.</span>
+            <a href="cart.html"><img src="#" alt="Добавитьв корзину"></a>
           </div>
         </div>
       </div>
 
-      <section class="main__manufacturing">
+      <section class="main__manufacturing manufacturing">
         <h3 class="manufacturing__title">Процесс производства</h3>
         <video class="manufacturing__video" src="img/#"></video>
         <p class="manufacturing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -65,29 +71,27 @@
       </section>
     </main>
 
-    <footer>
-      <ul>
-        <li><a class="social-btn social-btn-inst" target="_blank" href="https://www.instagram.com/htmlacademy/">instagram</a></li>
-        <li><a class="social-btn social-btn-fb" target="_blank" href="https://www.facebook.com/htmlacademy">facebook</a></li>
-        <li><a class="social-btn social-btn-twit" target="_blank" href="https://twitter.com/htmlacademy_ru">twiter</a></li>
+    <footer class="footer">
+      <a class="footer__logo logo" href="#"><img src="img/*" alt="Магазин Мишка"></a>
+      <ul class="footer__social social">
+        <li><a class="social__btn social__btn--inst" target="_blank" href="https://www.instagram.com/htmlacademy/">instagram</a></li>
+        <li><a class="social__btn social__btn--fb" target="_blank" href="https://www.facebook.com/htmlacademy">facebook</a></li>
+        <li><a class="social__btn social__btn--twit" target="_blank" href="https://twitter.com/htmlacademy_ru">twiter</a></li>
       </ul>
-      <span>
-        <a href="https://htmlacademy.ru/intensive/adaptive">Разработано <img src="#" alt="#"></a>
+      <span class="footer__copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive">Разработано <img src="#" alt="Заходите на HTMLAcademy.ru"></a>
       </span>
     </footer>
 
     <div class="popup">
-      <h3>Добавить  в корзину</h3>
-      <p>Выберите размер:</p>
-      <dl>
-        <dt>S</dt>
-        <dd>Маленький</dd>
-        <dt>M</dt>
-        <dd>Средний</dd>
-        <dt>L</dt>
-        <dd>Большой</dd>
-      </dl>
-      <a href="cart.html"></a>
+      <h3 class="popup__title">Добавить  в корзину</h3>
+      <p class="popup__text">Выберите размер:</p>
+      <form class="pupup__form" id="popup-form">
+        <label class="popup__checkbox-label" aria-label="Маленький"><input class="popup__checkbox" type="checkbox" checked>S</label>
+        <label class="popup__checkbox" aria-label="Средний"><input class="popup__checkbox-label" type="checkbox">M</label>
+        <label class="popup__checkbox" aria-label="Большой"><input class="popup__checkbox-label" type="checkbox">L</label>
+      </form>
+      <button class="popup__btn btn" href="cart.html" form="popup-form"></button>
     </div>
   </body>
 </html>

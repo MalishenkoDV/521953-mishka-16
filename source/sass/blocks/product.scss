@@ -1,0 +1,27 @@
+.product {
+  padding: 30px;
+}
+
+.product__denotation {
+  font-size: 25px;
+  padding: 30px;
+}
+
+.product__attribute {
+  color: #66cccc;
+  font-size: 17px;
+}
+
+.product__table {
+  width: 100%;
+}
+
+.product__table td {
+  border-bottom: 1px solid #000;
+}
+
+.product__table th {
+  width: 36%;
+  text-align: left;
+  border-bottom: 1px solid #000;
+}

@@ -1,0 +1,28 @@
+.footer {
+  margin: 30px;
+}
+
+.footer__logo {
+  display: none;
+}
+
+.footer__social {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  border-bottom: 1px solid #000000;
+}
+
+.footer__social li {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+}
+
+.footer__copyright {
+  font-size: 19px;
+  font-weight: 700;
+}

@@ -1,0 +1,10 @@
+.nav {
+  @include clear-list-style;
+}
+
+.nav__item {
+  display: block;
+  font-weight: 700;
+  height: 80px;
+  padding-left: 30px;
+}

@@ -1,10 +1,10 @@
 .nav {
   @include clear-list-style;
+  margin: 0;
 }
 
 .nav__item {
   display: block;
   font-weight: 700;
-  height: 80px;
-  padding-left: 30px;
+  padding: 20px 30px;
 }

@@ -21,6 +21,7 @@
 
 .btn-burger::before,
 .btn-burger::after {
+  top: 0;
   content: "";
   position: absolute;
   width: 3px;

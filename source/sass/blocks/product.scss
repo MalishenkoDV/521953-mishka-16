@@ -4,24 +4,37 @@
 
 .product__denotation {
   font-size: 25px;
-  padding: 30px;
+  margin: 0;
 }
 
 .product__attribute {
   color: #66cccc;
   font-size: 17px;
+  margin: 0;
 }
 
+.product__description {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 20px 0;
+}
 .product__table {
   width: 100%;
+  font-weight: 400;
+  font-size: 15px;
 }
 
-.product__table td {
-  border-bottom: 1px solid #000;
+.product__table tr::after {
+  width: 100px;
+  content: "";
+  background-color: crimson;
+  position: absolute;
+  left: 10px;
+  top: 20px;
 }
 
 .product__table th {
   width: 36%;
   text-align: left;
-  border-bottom: 1px solid #000;
+  font-weight: 400;
 }

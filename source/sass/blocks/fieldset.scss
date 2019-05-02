@@ -1,0 +1,18 @@
+.fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.fieldset-legend {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: teal;
+}
+
+.fieldset label {
+  font-weight: 700;
+  margin: 15px 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+}

@@ -1,0 +1,29 @@
+.card {
+border: 1px solid lightgrey;
+margin-bottom: 30px;
+font-size: 15px;
+}
+
+.card__description {
+  margin: 15px 30px;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 17px;
+  padding: 0;
+}
+
+.card__price {
+  font-weight: 700;
+}
+
+.card__characteristics {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.card__description a {
+  margin-left: 105px;
+}

@@ -1,10 +1,10 @@
 .popup {
   height: 200px;
   width: 0 auto;
-  background-color: #ffa;
+  background-color: #ffffaa;
   padding: 30px;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  // -webkit-backdrop-filter: blur(10px);
 }
 
 .popup__title {
@@ -13,9 +13,9 @@
 
 .popup__checkbox-label {
   width: 33%;
-  border: #000;
+  border: #000000;
 }
 
 .popup__btn {
-  width: -webkit-fill-available;
+  width: auto;
 }

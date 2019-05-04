@@ -5,6 +5,17 @@
   border: 2px solid #333333;
   display: block;
   padding: 20px 0px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #444444;
+  border: 2px solid #444444;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .btn-burger {
@@ -15,7 +26,7 @@
   width: 25px;
   height: 25px;
   font-size: 0;
-  background-color: #a0ffff;
+  background-color: #ffffff;
   border: none;
 }
 

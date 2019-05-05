@@ -1,0 +1,41 @@
+.fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.fieldset-legend {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #63d1bb;
+  font-size: 17px;
+}
+
+.fieldset label {
+  font-weight: 700;
+  margin: 15px 0;
+  width: 100%;
+  display: block;
+}
+
+.form__lbl-checbx {
+  padding-left: 64px;
+}
+
+.fieldset input[type="text"],
+.fieldset input[type="tel"],
+.fieldset input[type="email"] {
+  border: none;
+  padding: 15px;
+  outline: 0;
+  border-bottom: 2px solid #000000;
+}
+
+.fieldset input[type="text"]:focus,
+.fieldset input[type="tel"]:focus,
+.fieldset input[type="email"]:focus {
+  border-bottom: 2px solid #62d1ba;
+}
+
+.fieldset textarea {
+  height: 142px;
+}

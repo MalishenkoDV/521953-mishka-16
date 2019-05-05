@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
   font-size: 17px;
@@ -20,16 +20,7 @@ img {
   height: auto;
 }
 
-.nav {
-  @include clear-list-style;
-}
-
-.btn {
-  text-align: center;
-  text-transform: uppercase;
-  padding: 0 18px;
-  border: 2px solid #333333;
-  width: 100%;
-  display: block;
-  padding: 20px 0px;
+p {
+  margin: 0;
+  padding: 0;
 }

@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
-    <link href="fonts/opensans.woff2" type="font/woff2" rel="preload" as="font">
     <link href="fonts/opensanslight.woff2" type="font/woff2" rel="preload" as="font">
-    <link href="fonts/opensans.woff" type="font/woff" rel="preload">
+    <link href="fonts/opensans.woff2" type="font/woff2" rel="preload" as="font">
+    <link href="fonts/opensansbold.woff2" type="font/woff2" rel="preload" as="font">
     <link href="fonts/opensanslight.woff" type="font/woff" rel="preload">
+    <link href="fonts/opensans.woff" type="font/woff" rel="preload">
+    <link href="fonts/opensansbold.woff" type="font/woff" rel="preload">
     <meta name="format-detection" content="telephone=no">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -32,40 +34,52 @@
       <h1 class="main__title">Каталог товаров</h1>
       <div class="main__catalog catalog">
         <div class="catalog__card card">
-          <img class="card__img" src="img/photo-hare-mobile@1x.jpg" alt="Ушастый лушпай, у которого отняли морковку вегатериацы.">
+          <a href="#">
+            <img class="card__img" src="img/photo-hare-mobile@1x.jpg" alt="Ушастый лушпай, у которого отняли морковку вегатериацы.">
+          </a>
           <div class="card__description">
             <h6 class="card__title">Зайчик-попрыгайчик</h6>
             <p class="card__characteristics">Рост 30 см, вес 200 г</p>
-            <span class="card__price">1 200 руб.</span>
-            <a href="cart.html"><img src="#" alt="Добавитьв корзину"></a>
+            <div>
+              <span class="card__price">1 200 руб.</span>
+              <a href="#"><img src="img/icon-cart.svg" alt="Добавитьв корзину"></a>
+            </div>
+
           </div>
         </div>
 
         <div class="catalog__card card">
-          <img class="card__img" src="img/photo-bowl-mobile@1x.jpg" alt="Вязаный тазик, в который белье постельное не поместится. Разве что вертиканьно.">
+          <a href="#">
+            <img class="card__img" src="img/photo-bowl-mobile@1x.jpg" alt="Вязаный тазик, в который белье постельное не поместится. Разве что вертиканьно.">
+          </a>
           <div class="card__description">
             <h6 class="card__title">Корзинка для белья</h6>
             <p class="card__characteristics">Диаметр 15 см, высота 10 см</p>
-            <span class="card__price">690 руб.</span>
-            <a href="cart.html"><img src="#" alt="Добавитьв корзину"></a>
+            <div>
+              <span class="card__price">690 руб.</span>
+              <a href="#"><img src="img/icon-cart.svg" alt="Добавитьв корзину"></a>
+            </div>
           </div>
         </div>
 
         <div class="catalog__card card">
-          <img class="card__img" src="img/photo-toys-mobile@1x.jpg" alt="Чуть меньше мусорки и покрасиве. Вы ведь не будете ставить мусорку себе на стол на видное место? А это - будете!">
+          <a href="#">
+            <img class="card__img" src="img/photo-toys-mobile@1x.jpg" alt="Чуть меньше мусорки и покрасиве. Вы ведь не будете ставить мусорку себе на стол на видное место? А это - будете!">
+          </a>
           <div class="card__description">
             <h6 class="card__title">Большая корзинка для игрушек</h6>
             <p class="card__characteristics">Диаметр 30 см, высота 30 см</p>
-            <hr>
-            <span class="card__price">1 500 руб.</span>
-            <a href="cart.html"><img src="#" alt="Добавитьв корзину"></a>
+            <div>
+              <span class="card__price">1 500 руб.</span>
+              <a href="#"><img src="img/icon-cart.svg" alt="Добавитьв корзину"></a>
+            </div>
           </div>
         </div>
       </div>
 
       <section class="main__manufacturing manufacturing">
         <h3 class="manufacturing__title">Процесс производства</h3>
-        <video class="manufacturing__video" src="img/video-mobile@1x.jpg"></video>
+        <video class="manufacturing__video" poster="img/video-mobile@1x.jpg" width="260" height="150"></video>
         <p class="manufacturing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="manufacturing__btn btn" href="cart.html">Сделать заказ</a>
       </section>

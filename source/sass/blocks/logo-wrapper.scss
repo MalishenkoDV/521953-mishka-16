@@ -3,34 +3,5 @@
   height: 80px;
   width: 100%;
   text-align: center;
-  border-bottom: 2px solid grey;
-}
-
-.btn-burger {
-  position: absolute;
-  display: block;
-  top: 30px;
-  right: 30px;
-  width: 25px;
-  height: 25px;
-  font-size: 0;
-  background-color: #a0ffff;
-  border: none;
-}
-
-.btn-burger::before,
-.btn-burger::after {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 30px;
-  background-color: #000000;
-}
-
-.btn-burger::before {
-  transform: rotate(45deg);
-}
-
-.btn-burger::after {
-  transform: rotate(-45deg);
+  border-bottom: 2px solid #ececec;
 }

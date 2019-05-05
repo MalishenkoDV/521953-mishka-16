@@ -1,0 +1,49 @@
+.btn {
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #333333;
+  display: block;
+  padding: 20px 0;
+  font-weight: 700;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #444444;
+  border: 2px solid #444444;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-burger {
+  position: absolute;
+  display: block;
+  top: 30px;
+  right: 30px;
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  background-color: #ffffff;
+  border: none;
+}
+
+.btn-burger::before,
+.btn-burger::after {
+  top: 0;
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 30px;
+  background-color: #000000;
+}
+
+.btn-burger::before {
+  transform: rotate(45deg);
+}
+
+.btn-burger::after {
+  transform: rotate(-45deg);
+}

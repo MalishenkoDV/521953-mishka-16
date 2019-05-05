@@ -1,0 +1,29 @@
+.form {
+  margin: 0;
+  padding: 30px;
+  font-size: 17px;
+}
+
+.form__description {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.form__input-text {
+  width: 100%;
+}
+
+.form__radio,
+.form__input {
+  display: none;
+}
+
+.form__note {
+  font-size: 14px;
+  text-align: center;
+}
+
+.form__btn {
+  width: 100%;
+  background-color: #ffffff;
+}

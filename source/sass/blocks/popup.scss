@@ -1,0 +1,21 @@
+.popup {
+  height: 200px;
+  width: 0 auto;
+  background-color: #ffffaa;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  // -webkit-backdrop-filter: blur(10px);
+}
+
+.popup__title {
+  text-align: center;
+}
+
+.popup__checkbox-label {
+  width: 33%;
+  border: #000000;
+}
+
+.popup__btn {
+  width: auto;
+}

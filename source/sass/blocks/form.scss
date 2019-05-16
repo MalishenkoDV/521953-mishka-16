@@ -5,6 +5,9 @@
 }
 
 .form__description {
+  margin-top: -5px;
+  padding-bottom: 18px;
+  line-height: 1.75;
   font-size: 14px;
   font-weight: 300;
 }
@@ -27,3 +30,17 @@
   width: 100%;
   background-color: #ffffff;
 }
+
+.form__lbl-checbx,
+.form__lbl-radio {
+  padding-left: 64px;
+}
+
+.form__lbl-checbx {
+  padding-bottom: 23px;
+}
+
+.form__lbl-checbx:last-of-type {
+padding-bottom: 0;
+}
+

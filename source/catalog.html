@@ -20,11 +20,11 @@
           <a href="index.html"><img class="header__logo" src="img/logo-mobile.svg" alt="Мишка. Магазин вещей, сделанных врукопашную!"></a>
         <button class="btn btn-burger" type="button"></button>
       </div>
-      <ul class="header__nav nav">
+      <ul class="header__nav nav  btn-burger--none">
         <li><a class="nav__item" href="catalog.html">Каталог товаров</a></li>
         <li><a class="nav__item" href="form.html">Вязание на заказ</a></li>
       </ul>
-      <ul class="header__nav nav">
+      <ul class="header__nav nav  btn-burger--none">
         <li><a class="nav__item" href="serch.html">Поиск по сайту</a></li>
         <li><a class="nav__item" href="cart.html">Корзина: пока пуста</a></li>
       </ul>
@@ -101,11 +101,14 @@
       <h3 class="popup__title">Добавить  в корзину</h3>
       <p class="popup__text">Выберите размер:</p>
       <form class="pupup__form" id="popup-form">
-        <label class="popup__checkbox-label" aria-label="Маленький"><input class="popup__checkbox" type="checkbox" checked>S</label>
-        <label class="popup__checkbox" aria-label="Средний"><input class="popup__checkbox-label" type="checkbox">M</label>
-        <label class="popup__checkbox" aria-label="Большой"><input class="popup__checkbox-label" type="checkbox">L</label>
+        <label class="popup__label" for="popup-checkbox" aria-label="Маленький">
+        <input class="popup__checkbox visually-hidden1" id="popup-checkbox" form="popup-form" type="checkbox" name="popup-form-s" checked>S</label>
+        <label class="popup__label" for="popup-checkbox2" aria-label="Средний">M</label>
+        <input class="popup__checkbox visually-hidden1" id="popup-checkbox2" form="popup-form" type="checkbox" name="popup-for">
+        <label class="popup__label" for="popup-checkbox3" aria-label="Большой">L</label>
+        <input class="popup__checkbox visually-hidden1" id="popup-checkbox3" form="popup-form" type="checkbox" name="popup-form0">
       </form>
-      <button class="popup__btn btn" type="submit" form="popup-form"></button>
+      <button class="popup__btn btn" type="submit" form="popup-form">Добавить</button>
     </div>
   </body>
 </html>

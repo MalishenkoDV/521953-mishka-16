@@ -18,11 +18,11 @@
         <img class="header__logo" src="img/logo-mobile.svg" alt="Мишка. Магазин вещей, сделанных врукопашную!">
         <button class="btn btn-burger" type="button"></button>
       </div>
-      <ul class="header__nav nav">
+      <ul class="header__nav nav btn-burger--none">
         <li><a class="nav__item" href="catalog.html">Каталог товаров</a></li>
         <li><a class="nav__item" href="form.html">Вязание на заказ</a></li>
       </ul>
-      <ul class="header__nav nav">
+      <ul class="header__nav nav btn-burger--none">
         <li><a class="nav__item" href="serch.html">Поиск по сайту</a></li>
         <li><a class="nav__item" href="cart.html">Корзина: пока пуста</a></li>
       </ul>
@@ -38,16 +38,11 @@
           <li>Бесплатная доставка по России</li>
         </ul>
         <h1 class="site-theme__slogan">Милые штуки ручной  работы для дома</h1>
-        <img src="img/hero-mobile@1x.jpg" alt="Геройское размещение вязанных изделийв шкафчике на стене" width="575" height="373">
       </div>
       <section class="main__category category">
         <h3 class="visually-hidden">категории изделий</h3>
-        <div class="category__item category__item--01">
-          <p>Предметы  интерьера</p>
-        </div>
-        <div class="category__item category__item--02">
-          <p>Детские  игрушки</p>
-        </div>
+        <a class="category__item category__item--01" href="#"><p>Предметы  интерьера</p></a>
+        <a class="category__item category__item--02" href="#"><p>Детские  игрушки</p></a>
       </section>
 
       <section class="product">
@@ -71,7 +66,7 @@
           </tr>
         </table>
         <img class=" product__img" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки разного диаметра">
-        <p class=" product__price">Цена: 990 руб.</p>
+        <p class="product__price">Цена: 990 руб.</p>
         <a class="btn product__btn" href="cart.html">ЗАКАЗАТЬ</a>
       </section>
 
@@ -96,32 +91,33 @@
             <a href="#">@misssssiskras</a>
           </blockquote>
           <div class="container-btn">
-            <button class="btn feedback__btn" type="button">Туда</button>
-            <button class="btn feedback__btn" type="button">Сюда</button>
+            <button class="btn feedback__arrow" type="button">Туда</button>
+            <button class="btn feedback__arrow" type="button">Сюда</button>
           </div>
-        </div>
-      </section>
-
-      <section class="contacts">
-        <div class="contacts__description">
-          <h3 class="contacts__title">Контакты</h3>
-          <table class="contacts__table">
-            <tr>
-              <th>e-mail:</th>
-              <td>info@mimimishkashop.ru</td>
-            </tr>
-            <tr>
-              <th>адрес:</th>
-              <td>г. Санкт-Петербург, ул. Большая Конюшенная, д 19/8 офис 101</td>
-            </tr>
-          </table>
-          <a href="#"><img src="img/map-mobile@1x.jpg" alt="map"></a>
-          <div>
-            <a class="btn" href="write-us.html">Напишите нам</a>
-          </div>
+          <a class="btn feedback__btn" href="#">Написать</a>
         </div>
       </section>
     </main>
+
+    <section class="contacts">
+      <div class="contacts__description">
+        <h3 class="contacts__title">Контакты</h3>
+        <table class="contacts__table">
+          <tr>
+            <th>e-mail:</th>
+            <td>info@mimimishkashop.ru</td>
+          </tr>
+          <tr>
+            <th>адрес:</th>
+            <td>г. Санкт-Петербург, ул. Большая Конюшенная, д 19/8 офис 101</td>
+          </tr>
+        </table>
+      </div>
+      <a href="#"><img src="img/map-mobile@1x.jpg" alt="map"></a>
+      <div>
+        <a class="btn feedback__btn" href="write-us.html">Напишите нам</a>
+      </div>
+    </section>
 
     <footer class="footer">
       <a class="footer__logo logo" href="#"><img src="img/logo-mobile.svg" alt="Магазин Мишка"></a>
@@ -139,11 +135,14 @@
       <h3 class="popup__title">Добавить  в корзину</h3>
       <p class="popup__text">Выберите размер:</p>
       <form class="pupup__form" id="popup-form">
-        <label class="popup__checkbox-label" aria-label="Маленький"><input class="popup__checkbox" type="checkbox" checked>S</label>
-        <label class="popup__checkbox" aria-label="Средний"><input class="popup__checkbox-label" type="checkbox">M</label>
-        <label class="popup__checkbox" aria-label="Большой"><input class="popup__checkbox-label" type="checkbox">L</label>
+        <label class="popup__label" for="popup-checkbox" aria-label="Маленький">
+        <input class="popup__checkbox visually-hidden1" id="popup-checkbox" form="popup-form" type="checkbox" name="popup-form-s" checked>S</label>
+        <label class="popup__label" for="popup-checkbox2" aria-label="Средний">M</label>
+        <input class="popup__checkbox visually-hidden1" id="popup-checkbox2" form="popup-form" type="checkbox" name="popup-for">
+        <label class="popup__label" for="popup-checkbox3" aria-label="Большой">L</label>
+        <input class="popup__checkbox visually-hidden1" id="popup-checkbox3" form="popup-form" type="checkbox" name="popup-form0">
       </form>
-      <button class="popup__btn btn" type="submit" form="popup-form"></button>
+      <button class="popup__btn btn" type="submit" form="popup-form">Добавить</button>
     </div>
   </body>
 </html>

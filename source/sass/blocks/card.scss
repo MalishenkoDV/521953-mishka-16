@@ -15,7 +15,7 @@
 }
 
 .card__description {
-  margin: 15px 28px;
+  margin: 24px 28px;
 }
 
 .card__title {
@@ -28,6 +28,7 @@
 .card__description div {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 7px;
 }
 
 .card__price {
@@ -37,7 +38,7 @@
 .card__characteristics {
   font-size: 13px;
   border-bottom: 1px solid #bbbbbb;
-  padding-top: 17px;
+  padding-top: 10px;
   padding-bottom: 26px;
   margin-bottom: 15px;
 }

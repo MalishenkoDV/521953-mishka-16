@@ -5,10 +5,12 @@
 .site-theme__slogan {
   font-size: 27px;
   line-height: 30px;
-  margin: 50px;
   text-align: center;
+  width: 260px;
+  margin: auto;
 }
 
-.site-theme img {
-  z-index: -1;
+.site-theme {
+  padding: 70px 20px 122px;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat #dddddd;
 }

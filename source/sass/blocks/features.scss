@@ -1,9 +1,77 @@
+.features__title {
+  font-size: 25px;
+  padding-top: 6px;
+}
+
 .features__list {
   list-style: none;
   padding: 0;
   font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .features__list li {
-  padding: 70px 0 15px;
+  padding: 65px 0 18px;
+  line-height: 1.2;
+  position: relative;
+}
+
+.features__item--eko::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 10px;
+  background-image: url("../img/icon-feature-gift.svg"), no-repeat;
+}
+
+.features__item--suomi::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 10px;
+  background-image: url("../img/icon-feature-gift.svg"), no-repeat;
+}
+
+.features__item--likes::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 10px;
+  background-image: url("../img/icon-feature-gift.svg"), no-repeat;
+}
+
+.features__item--with-love::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 10px;
+  background-image: url("../img/icon-feature-gift.svg"), no-repeat;
+}
+
+.features__item--support::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 10px;
+  background-image: url("../img/icon-feature-gift.svg"), no-repeat;
+}
+
+.features__item--gift::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 10px;
+  background-image: url("../img/icon-feature-gift.svg"), no-repeat;
 }

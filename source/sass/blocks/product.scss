@@ -1,16 +1,19 @@
 .product {
   padding: 30px;
+  padding-top: 25px;
 }
 
 .product__denotation {
   font-size: 25px;
   margin: 0;
+  padding: 0;
 }
 
 .product__attribute {
-  color: #66cccc;
-  font-size: 17px;
+  color: $seafoam-blue;
+  font-size: 18px;
   margin: 0;
+  padding: 0;
 }
 
 .product__description {
@@ -23,19 +26,32 @@
   width: 100%;
   font-weight: 400;
   font-size: 15px;
+  position: relative;
+  border-collapse: collapse;
+  table-layout: fixed;
 }
 
-.product__table tr::after {
-  width: 100px;
-  content: "";
-  background-color: crimson;
-  position: absolute;
-  left: 10px;
-  top: 20px;
+.product__table tr {
+  height: 2.5em;
+  border-bottom: 1px solid lightgrey;
 }
 
 .product__table th {
   width: 36%;
   text-align: left;
   font-weight: 400;
+}
+
+.product__img {
+  margin-top: 26px;
+}
+
+.product__price {
+  text-align: center;
+  margin: 21px;
+  font-weight: 700;
+}
+
+.product__btn {
+  padding: 12px 0;
 }

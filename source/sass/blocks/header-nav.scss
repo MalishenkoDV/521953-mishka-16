@@ -1,5 +1,8 @@
 .header__nav li {
   margin: 0;
   border-bottom: 2px solid #ececec;
-  // padding-left: 80px;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

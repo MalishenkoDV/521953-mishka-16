@@ -1,5 +1,6 @@
 .footer {
-  margin: 30px;
+  padding: 30px;
+  background-color: #999;
 }
 
 .footer__logo {
@@ -25,4 +26,8 @@
 .footer__copyright {
   font-size: 19px;
   font-weight: 700;
+}
+
+.footer__copyright img {
+  vertical-align: middle;
 }

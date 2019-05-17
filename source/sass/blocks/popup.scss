@@ -1,21 +1,62 @@
 .popup {
-  height: 200px;
+  min-height: 340px;
   width: 0 auto;
   background-color: #ffffaa;
   padding: 30px;
+  text-align: center;
   backdrop-filter: blur(10px);
   // -webkit-backdrop-filter: blur(10px);
 }
 
 .popup__title {
-  text-align: center;
+  margin: 0 55px 10px;
+  font-size: 25px;
 }
 
-.popup__checkbox-label {
-  width: 33%;
-  border: #000000;
+.popup__text {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.pupup__form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .popup__btn {
-  width: auto;
+  width: 100%;
+  padding: 12px 0;
+  background-color: $seafoam-blue;
+  border: 2px solid $seafoam-blue;
+  color: $light-text;
+}
+
+.popup__btn:hover,
+.popup__btn:focus {
+  border: 2px solid #444444;
+}
+
+.popup__btn:active {
+  opacity: 0.3;
+}
+
+.popup__label {
+  width: 32%;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  color: $greyish-brown;
+  padding: 10px 19px;
+  margin: 5px;
+  border: 1px solid grey;
+}
+
+.popup__label:hover,
+.popup__label:focus {
+  border: 1px solid blue;
+}
+
+.popup__checkbox:checked + .popup__label {
+  border: 1px solid red;
 }

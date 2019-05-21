@@ -1,5 +1,13 @@
 .category {
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 3.25em;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    margin-top: -50px;
+  }
 }
 
 .category__item {
@@ -8,6 +16,10 @@
   position: relative;
   display: block;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }
 
 .category__item p {

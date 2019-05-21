@@ -4,6 +4,10 @@
 
 .main__site-theme {
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .main__title {

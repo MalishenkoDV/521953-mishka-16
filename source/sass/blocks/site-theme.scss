@@ -2,12 +2,29 @@
   display: none;
 }
 
+.site-theme__list2 {
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    right: 60px;
+    top: 20px;
+  }
+}
+
 .site-theme__slogan {
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   width: 260px;
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    width: auto;
+    margin: 0 80px;
+    line-height: 1.16;
+  }
 }
 
 .site-theme {

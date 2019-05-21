@@ -30,6 +30,10 @@
   font-size: 0;
   background-color: $back-fon;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .btn-burger::before,

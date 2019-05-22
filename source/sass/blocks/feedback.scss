@@ -1,6 +1,11 @@
 .feedback__title {
   font-size: 25px;
   padding: 5px 0 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 82px 0 10px;
+    font-size: 43px;
+  }
 }
 
 .feedback__comment {
@@ -12,6 +17,12 @@
   line-height: 2;
   font-size: 15px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 1.76;
+    margin: 56px 0 65px;
+  }
 }
 
 .feedback__comment b {

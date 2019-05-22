@@ -7,6 +7,12 @@
   display: block;
   padding: 20px 0;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    width: 40%;
+    align-self: flex-start;
+    align-content: center;
+  }
 }
 
 .btn:hover,

@@ -61,6 +61,7 @@
 
   @media (min-width: $tablet-width) {
     align-self: flex-start;
+    width: 40%;
   }
 }
 
@@ -77,12 +78,20 @@
 
 .product__img {
   margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .product__price {
   text-align: center;
   margin: 21px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    width: 40%;
+  }
 }
 
 .product__btn {

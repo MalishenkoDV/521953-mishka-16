@@ -1,3 +1,7 @@
 .about-us {
   padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 52px;
+  }
 }

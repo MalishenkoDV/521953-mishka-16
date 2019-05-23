@@ -18,17 +18,27 @@
           <a href="index.html"><img class="header__logo" src="img/logo-mobile.svg" alt="Мишка. Магазин вещей, сделанных врукопашную!"></a>
         <button class="btn btn-burger" type="button"></button>
       </div>
-      <ul class="header__nav nav btn-burger--none1">
+      <ul class="header__nav nav header__nav--site">
         <li><a class="nav__item" href="catalog.html">Каталог товаров</a></li>
         <li><a class="nav__item" href="form.html">Вязание на заказ</a></li>
       </ul>
-      <ul class="header__nav nav btn-burger--none1">
-        <li><a class="nav__item" href="serch.html">Поиск по сайту</a></li>
-        <li><a class="nav__item" href="cart.html">Корзина: пока пуста</a></li>
+      <ul class="header__nav nav header__nav--client">
+        <li><a class="nav__item nav__item--search" href="serch.html">Поиск по сайту</a></li>
+        <li><a class="nav__item nav__item--cart" href="cart.html">Корзина: пока пуста</a></li>
       </ul>
     </header>
     <main class="main">
-      <h1 class="main__title">Вязание на заказ</h1>
+      <div class="main__site-theme site__themes">
+        <ul class="site-theme__list site-theme__list1">
+          <li>Новые поступления</li>
+          <li>Распродажа</li>
+        </ul>
+        <ul class="site-theme__list site-theme__list2">
+          <li>Бесплатная доставка по России</li>
+        </ul>
+        <h1 class="main__title">Вязание на заказ</h1>
+      </div>
+
       <form class="main__form form" method="post" action="https://echo.htmlacademy.ru" autocomplete="on" name="form" id="knitting_form" accept-charset="utf-8">
         <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами чтобы уточнить детали.</p>
         <fieldset class="form__fieldset fieldset">

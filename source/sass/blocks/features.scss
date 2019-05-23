@@ -1,6 +1,10 @@
 .features__title {
   font-size: 25px;
   padding-top: 6px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+  }
 }
 
 .features__list {
@@ -14,16 +18,13 @@
   }
 }
 
-.features__list li {
+.features__item {
   padding: 65px 0 18px;
   line-height: 1.2;
   position: relative;
-}
-
-.features__item {
-
   @media (min-width: $tablet-width) {
-    width: 60%;
+    width: 80%;
+    font-size: 20px;
   }
 }
 .features__item--eko::after {

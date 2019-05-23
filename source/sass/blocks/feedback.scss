@@ -1,8 +1,20 @@
+.feedback {
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/review@1x.jpg") no-repeat, linear-gradient(90deg, #efefef, #ffffff);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 .feedback__title {
   font-size: 25px;
   padding: 5px 0 21px;
 
   @media (min-width: $tablet-width) {
+    order: 0;
     padding: 82px 0 10px;
     font-size: 43px;
   }
@@ -11,6 +23,10 @@
 .feedback__comment {
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .feedback__comment p {
@@ -33,6 +49,14 @@
 .container-btn {
   margin-bottom: 37px;
   padding: 11px 0;
+
+  @media (min-width: $tablet-width) {
+    background-color: #aaaaaa;
+    order: 2;
+    width: 20%;
+    align-self: flex-end;
+    margin-top: -100px;
+  }
 }
 
 .feedback__arrow {
@@ -45,4 +69,9 @@
 
 .feedback__btn {
   padding: 11px 0;
+
+  @media (min-width: $tablet-width) {
+    align-self: flex-end;
+    margin: -50px 0 0;
+  }
 }

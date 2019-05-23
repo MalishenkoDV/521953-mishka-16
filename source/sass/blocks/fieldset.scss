@@ -2,6 +2,10 @@
   border: none;
   margin-bottom: 20px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .fieldset-legend {

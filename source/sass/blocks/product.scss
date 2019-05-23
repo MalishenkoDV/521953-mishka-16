@@ -6,6 +6,7 @@
     padding: 3.25em;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -81,6 +82,9 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
+    width: 50%;
+    align-self: flex-end;
+    margin-top: -300px;
   }
 }
 
@@ -96,4 +100,8 @@
 
 .product__btn {
   padding: 12px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

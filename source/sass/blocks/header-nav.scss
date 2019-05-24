@@ -1,5 +1,52 @@
 .header__nav li {
   margin: 0;
   border-bottom: 2px solid #ececec;
-  // padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 1.41;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.header__nav--client,
+.header__nav--site {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-shrink: 0;
+    font-size: 15px;
+  }
+}
+
+.header__nav--client li {
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid red;
+  }
+}
+
+.header__nav--site {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 80px;
+    padding: 0;
+    z-index: 1;
+  }
+}
+
+.header__nav--site .nav__item {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+.nav__item--search {
+  @media (min-width: $tablet-width) {
+    font-size: 0;
+  }
 }

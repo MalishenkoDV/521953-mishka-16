@@ -1,3 +1,17 @@
 .header {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 52px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
+  margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    align-content: flex-start;
+  }
 }

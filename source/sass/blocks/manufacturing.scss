@@ -1,17 +1,47 @@
 .manufacturing {
   border: 1px solid #ececec;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .manufacturing__title {
   text-align: left;
   font-size: 17px;
-  width: 40%;
+  margin: 20px 0 20px 90px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.manufacturing__video {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    order: 0;
+  }
 }
 
 .manufacturing__description {
-  padding: 30px;
+  padding: 25px 33px;
+  font-size: 13px;
+  line-height: 1.9;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    font-size: 15px;
+  }
 }
 
 .manufacturing__btn {
-  margin: 30px;
+  font-size: 17px;
+  margin: 0 33px 30px;
+  padding: 12px 0;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    align-self: center;
+  }
 }

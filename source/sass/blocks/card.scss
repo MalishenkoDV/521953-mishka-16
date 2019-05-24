@@ -4,6 +4,10 @@
   border: 1px solid lightgrey;
   margin-top: 30px;
   font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .card:hover {
@@ -14,8 +18,20 @@
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
+.card__img {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
 .card__description {
-  margin: 15px 28px;
+  margin: 24px 28px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .card__title {
@@ -28,6 +44,7 @@
 .card__description div {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 7px;
 }
 
 .card__price {
@@ -37,9 +54,13 @@
 .card__characteristics {
   font-size: 13px;
   border-bottom: 1px solid #bbbbbb;
-  padding-top: 17px;
+  padding-top: 10px;
   padding-bottom: 26px;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    align-self: flex-start;
+  }
 }
 
 .card__description a {

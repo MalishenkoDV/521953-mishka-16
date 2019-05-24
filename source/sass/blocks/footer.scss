@@ -1,9 +1,21 @@
 .footer {
-  margin: 30px;
+  padding: 30px;
+  background-color: #999999;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
 }
 
 .footer__logo {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .footer__social {
@@ -13,6 +25,10 @@
   flex-wrap: wrap;
   align-content: center;
   border-bottom: 1px solid #000000;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .footer__social li {
@@ -25,4 +41,12 @@
 .footer__copyright {
   font-size: 19px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
+}
+
+.footer__copyright img {
+  vertical-align: middle;
 }

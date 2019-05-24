@@ -3,31 +3,43 @@
   text-align: center;
   text-transform: uppercase;
   border: 2px solid #333333;
+  background-color: $back-fon;
   display: block;
   padding: 20px 0;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    width: 40%;
+    align-self: flex-start;
+    align-content: center;
+  }
 }
 
-.btn:hover {
-  color: #ffffff;
-  background-color: #444444;
-  border: 2px solid #444444;
+.btn:hover,
+.btn:focus {
+  color: $light-text;
+  background-color: $greyish-brown;
+  border: 2px solid $greyish-brown;
 }
 
 .btn:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: $light-text-two;
 }
 
 .btn-burger {
   position: absolute;
   display: block;
-  top: 30px;
-  right: 30px;
+  top: 25px;
+  right: 13px;
   width: 25px;
   height: 25px;
   font-size: 0;
-  background-color: #ffffff;
+  background-color: $back-fon;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .btn-burger::before,
@@ -46,4 +58,8 @@
 
 .btn-burger::after {
   transform: rotate(-45deg);
+}
+
+.btn-burger--none {
+  display: none;
 }

@@ -1,6 +1,11 @@
 .fieldset {
   border: none;
   margin-bottom: 20px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .fieldset-legend {
@@ -8,23 +13,30 @@
   font-weight: 700;
   color: #63d1bb;
   font-size: 17px;
+  margin-bottom: 13px;
 }
 
-.fieldset label {
+.form__lbl-checbx,
+.form__lbl-radio {
+  line-height: 1.2;
   font-weight: 700;
-  margin: 15px 0;
-  width: 100%;
+  margin: 18px 0;
   display: block;
 }
 
-.form__lbl-checbx {
-  padding-left: 64px;
+.form__label {
+  margin: 5px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 15px 0;
+  }
 }
 
 .fieldset input[type="text"],
 .fieldset input[type="tel"],
 .fieldset input[type="email"] {
   border: none;
+  margin-bottom: 15px;
   padding: 15px;
   outline: 0;
   border-bottom: 2px solid #000000;
@@ -38,4 +50,9 @@
 
 .fieldset textarea {
   height: 142px;
+}
+
+.fieldset-legend--tel,
+.fieldset-legend--email {
+  margin: 0;
 }

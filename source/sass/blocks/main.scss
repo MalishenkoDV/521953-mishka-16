@@ -4,13 +4,17 @@
 
 .main__site-theme {
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .main__title {
   background-color: #f1f1f1;
-  padding: 50px 30px;
+  padding: 65px 30px 70px;
   margin: 0;
-  font-size: 25px;
+  font-size: 27px;
   text-align: center;
 }
 

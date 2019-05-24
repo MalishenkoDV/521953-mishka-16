@@ -20,18 +20,28 @@
           <a href="index.html"><img class="header__logo" src="img/logo-mobile.svg" alt="Мишка. Магазин вещей, сделанных врукопашную!"></a>
         <button class="btn btn-burger" type="button"></button>
       </div>
-      <ul class="header__nav nav">
+      <ul class="header__nav nav header__nav--site">
         <li><a class="nav__item" href="catalog.html">Каталог товаров</a></li>
         <li><a class="nav__item" href="form.html">Вязание на заказ</a></li>
       </ul>
-      <ul class="header__nav nav">
-        <li><a class="nav__item" href="serch.html">Поиск по сайту</a></li>
-        <li><a class="nav__item" href="cart.html">Корзина: пока пуста</a></li>
+      <ul class="header__nav nav header__nav--client">
+        <li><a class="nav__item nav__item--search" href="serch.html">Поиск по сайту</a></li>
+        <li><a class="nav__item nav__item--cart" href="cart.html">Корзина: пока пуста</a></li>
       </ul>
     </header>
 
     <main class="main">
-      <h1 class="main__title">Каталог товаров</h1>
+      <div class="main__site-theme site__themes">
+        <ul class="site-theme__list site-theme__list1">
+          <li>Новые поступления</li>
+          <li>Распродажа</li>
+        </ul>
+        <ul class="site-theme__list site-theme__list2">
+          <li>Бесплатная доставка по России</li>
+        </ul>
+        <h1 class="main__title">Каталог товаров</h1>
+      </div>
+
       <div class="main__catalog catalog">
         <div class="catalog__card card">
           <a href="#">
@@ -97,15 +107,19 @@
       </span>
     </footer>
 
-    <div class="popup">
-      <h3 class="popup__title">Добавить  в корзину</h3>
-      <p class="popup__text">Выберите размер:</p>
-      <form class="pupup__form" id="popup-form">
-        <label class="popup__checkbox-label" aria-label="Маленький"><input class="popup__checkbox" type="checkbox" checked>S</label>
-        <label class="popup__checkbox" aria-label="Средний"><input class="popup__checkbox-label" type="checkbox">M</label>
-        <label class="popup__checkbox" aria-label="Большой"><input class="popup__checkbox-label" type="checkbox">L</label>
-      </form>
-      <button class="popup__btn btn" type="submit" form="popup-form"></button>
+    <div class="popup-wrapper">
+      <div class="popup">
+        <h3 class="popup__title">Добавить  в корзину</h3>
+        <p class="popup__text">Выберите размер:</p>
+        <form class="pupup__form" id="popup-form">
+          <input class="popup__checkbox visually-hidden" id="popup-checkbox" form="popup-form" type="checkbox" name="popup-form-s" checked>
+          <label class="popup__label" for="popup-checkbox" aria-label="Маленький">S</label>
+          <input class="popup__checkbox visually-hidden" id="popup-checkbox2" form="popup-form" type="checkbox" name="popup-form-m">
+          <label class="popup__label" for="popup-checkbox2" aria-label="Средний">M</label>
+          <input class="popup__checkbox visually-hidden" id="popup-checkbox3" form="popup-form" type="checkbox" name="popup-for-l">
+          <label class="popup__label" for="popup-checkbox3" aria-label="Большой">L</label></form>
+        <button class="popup__btn btn" type="submit" form="popup-form">Добавить</button>
+      </div>
     </div>
   </body>
 </html>

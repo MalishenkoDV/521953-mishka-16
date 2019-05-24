@@ -15,7 +15,6 @@
 
 .header__nav--client,
 .header__nav--site {
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-shrink: 0;
@@ -24,13 +23,12 @@
 }
 
 .header__nav--client li {
-
   @media (min-width: $tablet-width) {
-  border-left: 1px solid red;
+    border-left: 1px solid red;
   }
 }
-.header__nav--site {
 
+.header__nav--site {
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 80px;
@@ -40,7 +38,6 @@
 }
 
 .header__nav--site .nav__item {
-
   @media (min-width: $tablet-width) {
     padding: 0;
     font-size: 15px;
@@ -49,7 +46,6 @@
 }
 
 .nav__item--search {
-
   @media (min-width: $tablet-width) {
     font-size: 0;
   }

@@ -26,6 +26,10 @@
 
 .form__label {
   margin: 5px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 15px 0;
+  }
 }
 
 .fieldset input[type="text"],
@@ -46,10 +50,6 @@
 
 .fieldset textarea {
   height: 142px;
-}
-
-.form__label {
-  margin: 15px 0;
 }
 
 .fieldset-legend--tel,

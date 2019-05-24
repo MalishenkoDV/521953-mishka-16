@@ -22,11 +22,13 @@
   padding: 65px 0 18px;
   line-height: 1.2;
   position: relative;
+
   @media (min-width: $tablet-width) {
     width: 80%;
     font-size: 20px;
   }
 }
+
 .features__item--eko::after {
   content: "";
   position: absolute;

@@ -5,6 +5,12 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .manufacturing__title {
@@ -15,12 +21,23 @@
   @media (min-width: $tablet-width) {
     order: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+  }
 }
 
 .manufacturing__video {
+  width: 260px;
+  height: 150px;
   @media (min-width: $tablet-width) {
     width: 100%;
     order: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 682px;
+    height: 455px;
   }
 }
 
@@ -32,6 +49,10 @@
   @media (min-width: $tablet-width) {
     order: 1;
     font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
   }
 }
 

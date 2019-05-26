@@ -35,6 +35,12 @@
     padding: 0;
     z-index: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: 0;
+    order: -1;
+  }
 }
 
 .header__nav--site .nav__item {
@@ -42,6 +48,12 @@
     padding: 0;
     font-size: 15px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    border: 1px solid red;
+    padding: 30px 20px;
   }
 }
 

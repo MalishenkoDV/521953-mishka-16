@@ -8,6 +8,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 314px;
+  }
 }
 
 .card:hover {
@@ -21,6 +25,10 @@
 .card__img {
   @media (min-width: $tablet-width) {
     order: 1;
+  }
+  @media (min-width: $desktop-width) {
+    width: 313px;
+    height: 462px;
   }
 }
 

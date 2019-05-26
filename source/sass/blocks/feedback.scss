@@ -6,6 +6,10 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
+  }
 }
 
 .feedback__title {
@@ -17,6 +21,10 @@
     padding: 82px 0 10px;
     font-size: 43px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+  }
 }
 
 .feedback__comment {
@@ -25,6 +33,10 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 50px;
   }
 }
 

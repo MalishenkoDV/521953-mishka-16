@@ -1,9 +1,19 @@
+.features {
+  @media (min-width: $desktop-width) {
+    padding: 50px 50px 50px 225px;
+  }
+}
+
 .features__title {
   font-size: 25px;
   padding-top: 6px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
   }
 }
 

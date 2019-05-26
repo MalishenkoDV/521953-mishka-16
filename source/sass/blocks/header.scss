@@ -6,6 +6,11 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 1150px;
+  }
 }
 
 .header__logo {

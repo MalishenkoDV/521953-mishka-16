@@ -6,7 +6,6 @@
     display: flex;
     justify-content: center;
     height: 120px;
-    margin-top: -50px;
   }
 }
 
@@ -59,7 +58,8 @@
 .category__item--01:hover,
 .category__item--01:focus {
   background-color: $seafoam-blue-two;
-  box-shadow: 0 0 0 5px $seafoam-blue-two;
+  // box-shadow: 0 0 0 5px $seafoam-blue-two;
+  border-bottom: 5px solid red;
   z-index: 1;
 }
 

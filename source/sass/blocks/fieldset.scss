@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    width: auto;
   }
 }
 
@@ -14,6 +15,10 @@
   color: #63d1bb;
   font-size: 17px;
   margin-bottom: 13px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+  }
 }
 
 .form__lbl-checbx,

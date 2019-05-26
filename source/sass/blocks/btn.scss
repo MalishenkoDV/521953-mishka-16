@@ -3,7 +3,7 @@
   text-align: center;
   text-transform: uppercase;
   border: 2px solid #333333;
-  background-color: $back-fon;
+  background-color: $back-bg;
   display: block;
   padding: 20px 0;
   font-weight: 700;
@@ -34,7 +34,7 @@
   width: 25px;
   height: 25px;
   font-size: 0;
-  background-color: $back-fon;
+  background-color: $back-bg;
   border: none;
 
   @media (min-width: $tablet-width) {

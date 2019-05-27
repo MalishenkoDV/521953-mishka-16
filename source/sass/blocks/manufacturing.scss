@@ -30,6 +30,7 @@
 .manufacturing__video {
   width: 260px;
   height: 150px;
+
   @media (min-width: $tablet-width) {
     width: 100%;
     order: 0;

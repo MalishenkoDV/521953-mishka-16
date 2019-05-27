@@ -10,6 +10,11 @@
   line-height: 1.75;
   font-size: 14px;
   font-weight: 300;
+
+  @media (min-width: $desktop-width) {
+    width: 675px;
+    margin: auto;
+  }
 }
 
 .form__input-text {

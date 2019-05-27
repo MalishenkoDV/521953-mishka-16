@@ -1,4 +1,12 @@
 .catalog {
   padding-left: 30px;
   padding-right: 30px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }

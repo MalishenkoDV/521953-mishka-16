@@ -1,10 +1,24 @@
 .site-theme__list {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    @include clear-list-style;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.site-theme__list1 {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+  }
 }
 
 .site-theme__list2 {
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
     position: absolute;
     right: 60px;
     top: 20px;
@@ -29,4 +43,10 @@
 .site-theme {
   padding: 70px 20px 122px;
   background: url("../img/hero-mobile@1x.jpg") no-repeat #dddddd;
+}
+
+.site__themes {
+  @media (min-width: $desktop-width) {
+    height: auto;
+  }
 }

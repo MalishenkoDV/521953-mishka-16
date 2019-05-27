@@ -10,4 +10,8 @@
     text-align: left;
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

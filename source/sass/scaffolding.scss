@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -13,6 +17,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 100%;
   }
 }
 

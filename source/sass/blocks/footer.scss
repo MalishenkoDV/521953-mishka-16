@@ -10,6 +10,13 @@
   }
 }
 
+.footer div {
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    margin: auto;
+  }
+}
+
 .footer__logo {
   display: none;
 

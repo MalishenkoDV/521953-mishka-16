@@ -19,6 +19,10 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+  }
 }
 
 .category__item p {

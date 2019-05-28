@@ -58,21 +58,24 @@
 .category__item--01:hover,
 .category__item--01:focus {
   background-color: $seafoam-blue-two;
-  // box-shadow: 0 0 0 5px $seafoam-blue-two;
-  border-bottom: 5px solid red;
+  // box-shadow: 0 0 0 5px ;
+  border-bottom: 5px solid $seafoam-blue-two;
   z-index: 1;
+  margin-top: -5px;
 }
 
 .category__item--02:hover,
 .category__item--02:focus {
   background-color: $aqua-marine-two;
-  box-shadow: 0 0 0 5px $aqua-marine-two;
+  border-bottom: 5px solid $aqua-marine-two;
   z-index: 1;
+  margin-top: -5px;
 }
 
 .category__item--01:hover::before,
 .category__item--01:focus::before {
   opacity: 0.7;
+  top: 17px;
 }
 
 .category__item--02:hover::before,

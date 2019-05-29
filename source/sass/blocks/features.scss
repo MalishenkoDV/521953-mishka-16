@@ -46,7 +46,8 @@
   height: 50px;
   top: 10px;
   left: 10px;
-  background-image: url("../img/icon-feature-gift.svg");
+  background-image: url("../img/icon-feature-flower.svg");
+  background-repeat: no-repeat;
 }
 
 .features__item--suomi::after {
@@ -56,7 +57,8 @@
   height: 50px;
   top: 10px;
   left: 10px;
-  background-image: url("../img/icon-feature-ball.svg");
+  background-image: url("../img/icon-feature-money.svg");
+  background-repeat: no-repeat;
 }
 
 .features__item--likes::after {
@@ -66,7 +68,8 @@
   height: 50px;
   top: 10px;
   left: 10px;
-  background-image: url("../img/icon-feature-flower.svg");
+  background-image: url("../img/icon-feature-heart.svg");
+  background-repeat: no-repeat;
 }
 
 .features__item--with-love::after {
@@ -76,7 +79,8 @@
   height: 50px;
   top: 10px;
   left: 10px;
-  background-image: url("../img/icon-feature-gift.svg"), no-repeat;
+  background-image: url("../img/icon-feature-ball.svg");
+  background-repeat: no-repeat;
 }
 
 .features__item--support::after {
@@ -86,7 +90,8 @@
   height: 50px;
   top: 10px;
   left: 10px;
-  background-image: url("../img/icon-feature-gift.svg"), no-repeat;
+  background-image: url("../img/icon-feature-rocket.svg");
+  background-repeat: no-repeat;
 }
 
 .features__item--gift::after {
@@ -96,5 +101,6 @@
   height: 50px;
   top: 10px;
   left: 10px;
-  background-image: url("../img/icon-feature-gift.svg"), no-repeat;
+  background-image: url("../img/icon-feature-gift.svg");
+  background-repeat: no-repeat;
 }

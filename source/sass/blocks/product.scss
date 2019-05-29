@@ -1,6 +1,5 @@
 .product {
   padding: 30px;
-  padding-top: 25px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -34,6 +33,7 @@
   font-size: 25px;
   margin: 0;
   padding: 0;
+  line-height: 1em;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
@@ -67,6 +67,7 @@
   font-size: 15px;
   font-weight: 400;
   padding: 20px 0;
+  line-height: 1.6em;
 
   @media (min-width: $tablet-width) {
     align-self: flex-start;
@@ -92,7 +93,8 @@
 }
 
 .product__table tr {
-  height: 2.5em;
+  height: 2.6em;
+  text-align: left;
   border-bottom: 1px solid lightgrey;
 }
 

@@ -15,16 +15,34 @@
   <body>
     <header class="header">
       <div class="logo-wrapper">
-        <img class="header__logo" src="img/logo-mobile.svg" alt="Мишка. Магазин вещей, сделанных врукопашную!">
+        <div class="header__logo" aria-label="Мишка. Магазин вещей, сделанных врукопашную!"></div>
+        <!--<img src="img/logo-mobile.svg">-->
         <button class="btn btn-burger" type="button"></button>
       </div>
       <ul class="header__nav nav header__nav--site">
         <li><a class="nav__item" href="catalog.html">Каталог товаров</a></li>
         <li><a class="nav__item" href="form.html">Вязание на заказ</a></li>
       </ul>
+
       <ul class="header__nav nav header__nav--client">
-        <li><a class="nav__item nav__item--search" href="serch.html">Поиск по сайту</a></li>
-        <li><a class="nav__item nav__item--cart" href="cart.html">Корзина: пока пуста</a></li>
+        <li>
+          <a class="nav__item nav__item--search" href="#">
+            <svg class="icon-search" aria-label="search">
+              <use xlink:href="#icon-search">
+              </use>
+            </svg>
+            Поиск по сайту
+          </a>
+        </li>
+        <li>
+          <a class="nav__item nav__item--cart" href="#">
+            <svg class="icon-cart" aria-label="cart">
+              <use xlink:href="#icon-cart">
+              </use>
+            </svg>
+            Корзина: пока пуста
+          </a>
+        </li>
       </ul>
     </header>
 
@@ -65,9 +83,17 @@
             <td>15 см</td>
           </tr>
         </table>
-        <img class=" product__img" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки разного диаметра">
+        <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/index-set-desktop@1x.webp 1x, img/index-set-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-set-tablet@1x.webp 1x, img/index-set-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index-set-mobile@1x.webp 1x, img/index-set-mobile@2x.webp 2x">
+          <source media="(min-width: 1150px)" srcset="img/index-set-desktop@1x.png 1x, img/index-set-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@1x.jpg 2x">
+          <source >
+          <img class=" product__img" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки разного диаметра" width="260" height="315">
+        </picture>
         <p class="product__price">Цена: 990 руб.</p>
-        <a class="btn product__btn" href="cart.html">ЗАКАЗАТЬ</a>
+        <a class="btn product__btn" href="#">ЗАКАЗАТЬ</a>
       </section>
 
       <section class="about-us">
@@ -118,19 +144,46 @@
         </div>
       </div>
       <a class="contacts__map" href="#"><img src="img/map-mobile@1x.jpg" alt="map"></a>
-      <a class="btn contacts__btn" href="write-us.html">Напишите нам</a>
+      <a class="btn contacts__btn" href="#">Напишите нам</a>
     </section>
 
     <footer class="footer">
       <div>
         <a class="footer__logo logo" href="#"><img src="img/logo-mobile.svg" alt="Магазин Мишка"></a>
         <ul class="footer__social social">
-          <li><a class="social__btn social__btn--inst" target="_blank" href="https://www.instagram.com/htmlacademy/"><img src="img/icon-insta.svg" alt="instagram"></a></li>
-          <li><a class="social__btn social__btn--fb" target="_blank" href="https://www.facebook.com/htmlacademy"><img src="img/icon-fb.svg" alt="facebook"></a></li>
-          <li><a class="social__btn social__btn--twit" target="_blank" href="https://twitter.com/htmlacademy_ru"><img src="img/icon-twitter.svg" alt="twiter"></a></li>
+          <li>
+            <a class="social__btn social__btn--inst" target="_blank" href="https://www.instagram.com/htmlacademy/">
+              <svg class="icon-insta" aria-label="instagram">
+                <use xlink:href="#icon-insta">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__btn social__btn--fb" target="_blank" href="https://www.facebook.com/htmlacademy">
+              <svg class="icon-fb" aria-label="facebook">
+                <use xlink:href="#icon-fb">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__btn social__btn--twit" target="_blank" href="https://twitter.com/htmlacademy_ru">
+              <svg class="icon-insta" aria-label="twitter">
+                <use xlink:href="#icon-twitter">
+                </use>
+              </svg>
+            </a>
+          </li>
         </ul>
         <span class="footer__copyright">
-          <a href="https://htmlacademy.ru/intensive/adaptive">Разработано <img src="img/htmlacademy.svg" alt="Заходите на HTMLAcademy.ru" width="50" height="50"></a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано
+            <img src="img/htmlacademy.svg" alt="Заходите на HTMLAcademy.ru" width="50" height="50">
+            <svg class="icon-htmlacademy" aria-label="htmlacademy">
+              <use xlink:href="#icon-htmlacademy">
+              </use>
+            </svg>
+          </a>
         </span>
       </div>
     </footer>

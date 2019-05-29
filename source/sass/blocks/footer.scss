@@ -1,6 +1,6 @@
 .footer {
   padding: 30px;
-  background-color: #999999;
+  background-color: $light-grey-bg;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -57,3 +57,4 @@
 .footer__copyright img {
   vertical-align: middle;
 }
+

@@ -3,19 +3,25 @@
     <head>
       <meta charset="utf-8">
       <link href="css/style.css" rel="stylesheet">
-      <link href="fonts/opensans.woff2" type="font/woff2" rel="preload" as="font">
       <link href="fonts/opensanslight.woff2" type="font/woff2" rel="preload" as="font">
-      <link href="fonts/opensans.woff" type="font/woff" rel="preload">
+      <link href="fonts/opensans.woff2" type="font/woff2" rel="preload" as="font">
+      <link href="fonts/opensansbold.woff2" type="font/woff2" rel="preload" as="font">
       <link href="fonts/opensanslight.woff" type="font/woff" rel="preload">
+      <link href="fonts/opensans.woff" type="font/woff" rel="preload">
+      <link href="fonts/opensansbold.woff" type="font/woff" rel="preload">
       <meta name="format-detection" content="telephone=no">
       <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <title>HTML Academy: Мишка - Форма заказки/выгрузки/загрузки/затаривания/заваривания/наваривания и других эпитетов</title>
+      <script src="js/picturefill.min.js" async></script>
     </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="header">
       <div class="logo-wrapper">
-          <a href="index.html"><img class="header__logo" src="img/logo-mobile.svg" alt="Мишка. Магазин вещей, сделанных врукопашную!"></a>
+          <a class="header__logo" href="index.html" aria-label="Мишка. Магазин вещей, сделанных врукопашную!"></a>
         <button class="btn btn-burger" type="button"></button>
       </div>
       <ul class="header__nav nav header__nav--site">
@@ -123,4 +129,6 @@
       </span>
     </footer>
   </body>
+  <script src="js/main.js">
+  </script>
 </html>

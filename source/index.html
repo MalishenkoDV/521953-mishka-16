@@ -3,47 +3,58 @@
   <head>
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
-    <link href="fonts/opensans.woff2" type="font/woff2" rel="preload" as="font">
     <link href="fonts/opensanslight.woff2" type="font/woff2" rel="preload" as="font">
-    <link href="fonts/opensans.woff" type="font/woff" rel="preload">
+    <link href="fonts/opensans.woff2" type="font/woff2" rel="preload" as="font">
+    <link href="fonts/opensansbold.woff2" type="font/woff2" rel="preload" as="font">
     <link href="fonts/opensanslight.woff" type="font/woff" rel="preload">
+    <link href="fonts/opensans.woff" type="font/woff" rel="preload">
+    <link href="fonts/opensansbold.woff" type="font/woff" rel="preload">
     <meta name="format-detection" content="telephone=no">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+      <svg xmlns="thhp://w3.org/2000/svg"></svg>
+    </div>
     <header class="header">
       <div class="logo-wrapper">
-        <div class="header__logo" aria-label="Мишка. Магазин вещей, сделанных врукопашную!"></div>
-        <!--<img src="img/logo-mobile.svg">-->
-        <button class="btn btn-burger" type="button"></button>
-      </div>
-      <ul class="header__nav nav header__nav--site">
-        <li><a class="nav__item" href="catalog.html">Каталог товаров</a></li>
-        <li><a class="nav__item" href="form.html">Вязание на заказ</a></li>
-      </ul>
+        <a class="header__logo" aria-label="Мишка. Магазин вещей, сделанных врукопашную!"></a>
 
-      <ul class="header__nav nav header__nav--client">
-        <li>
-          <a class="nav__item nav__item--search" href="#">
-            <svg class="icon-search" aria-label="search">
-              <use xlink:href="#icon-search">
-              </use>
-            </svg>
-            Поиск по сайту
-          </a>
-        </li>
-        <li>
-          <a class="nav__item nav__item--cart" href="#">
-            <svg class="icon-cart" aria-label="cart">
-              <use xlink:href="#icon-cart">
-              </use>
-            </svg>
-            Корзина: пока пуста
-          </a>
-        </li>
-      </ul>
+      </div>
+      <nav class="header__nav header__nav--nojs">
+        <button class="header__btn-burger btn" type="button"></button>
+        <div class="header__nav-wrapper">
+          <ul class="header__list nav header__list--site">
+            <li class="header__item"><a class="header__link" href="catalog.html">Каталог товаров</a></li>
+            <li class="header__item"><a class="header__link" href="form.html">Вязание на заказ</a></li>
+          </ul>
+
+          <ul class="header__list header__list--client">
+            <li class="header__item">
+              <a class="header__link header__link--search" href="#">
+                <svg class="icon-search" aria-label="search">
+                  <use xlink:href="#icon-search">
+                  </use>
+                </svg>
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link header__link--cart" href="#">
+                <svg class="icon-cart" aria-label="cart">
+                  <use xlink:href="#icon-cart">
+                  </use>
+                </svg>
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main class="main">
@@ -89,8 +100,7 @@
           <source type="image/webp" srcset="img/index-set-mobile@1x.webp 1x, img/index-set-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)" srcset="img/index-set-desktop@1x.png 1x, img/index-set-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@1x.jpg 2x">
-          <source >
-          <img class=" product__img" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки разного диаметра" width="260" height="315">
+          <img class=" product__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки разного диаметра" width="260" height="315">
         </picture>
         <p class="product__price">Цена: 990 руб.</p>
         <a class="btn product__btn" href="#">ЗАКАЗАТЬ</a>
@@ -202,5 +212,7 @@
         <button class="popup__btn btn" type="submit" form="popup-form">Добавить</button>
       </div>
     </div>
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

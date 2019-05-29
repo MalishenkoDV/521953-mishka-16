@@ -10,6 +10,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    min-width: 80px;
   }
 
   @media (min-width: $desktop-width) {

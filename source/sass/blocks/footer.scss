@@ -1,12 +1,19 @@
 .footer {
   padding: 30px;
-  background-color: #999999;
+  background-color: $light-grey-bg;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-content: center;
+  }
+}
+
+.footer div {
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    margin: auto;
   }
 }
 
@@ -50,3 +57,4 @@
 .footer__copyright img {
   vertical-align: middle;
 }
+

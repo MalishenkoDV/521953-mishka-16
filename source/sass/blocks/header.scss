@@ -14,9 +14,34 @@
 }
 
 .header__logo {
-  margin-top: 22px;
+  width: 200px;
+  height: 80px;
+  display: inline-block;
+  background-image: url("../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     align-content: flex-start;
+    height: 80px;
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 80px;
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.header__logo:hover,
+.header__logo:focus {
+  opacity: 0.6;
+}
+
+.header__logo:active {
+  opacity: 0.3;
 }

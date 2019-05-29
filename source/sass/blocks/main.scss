@@ -15,11 +15,13 @@
 
   @media (min-width: $desktop-width) {
     height: 746px;
+    width: 1150px;
+    margin: auto;
   }
 }
 
 .main__title {
-  background-color: #f1f1f1;
+  background-color: $light-grey-bg;
   padding: 65px 30px 70px;
   margin: 0;
   font-size: 27px;
@@ -31,11 +33,15 @@
 }
 
 .main__category {
+  margin-top: -90px;
+
   @media (min-width: $tablet-width) {
     margin-top: -50px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1150px;
+    margin: auto;
     margin-top: -120px;
   }
 }
@@ -52,4 +58,12 @@
 
 .main__catalog {
   width: 100%;
+}
+
+.product,
+.about-us {
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    margin: auto;
+  }
 }

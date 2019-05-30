@@ -1,0 +1,30 @@
+.icon-search,
+.icon-cart {
+  width: 18px;
+  height: 18px;
+  opacity: 0.2;
+}
+
+.icon-search:hover,
+.icon-cart:hover {
+  fill: $seafoam-blue;
+  opacity: 1;
+}
+
+.icon-search:active,
+.icon-cart:active {
+  fill: $seafoam-blue;
+  opacity: 0.3;
+}
+
+.icon-insta,
+.icon-fb,
+.icon-twitter {
+  width: 60px;
+  height: 60px;
+}
+
+.logo-htmlacademy {
+  width: 70px;
+  height: 70px;
+}

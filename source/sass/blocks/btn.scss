@@ -2,8 +2,6 @@
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
-  border: 2px solid #333333;
-  background-color: $back-bg;
   display: block;
   padding: 20px 0;
   font-weight: 700;
@@ -18,8 +16,6 @@
 .btn:hover,
 .btn:focus {
   color: $light-text;
-  background-color: $greyish-brown;
-  border: 2px solid $greyish-brown;
 }
 
 .btn:active {

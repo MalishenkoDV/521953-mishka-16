@@ -43,6 +43,10 @@
   font-size: 0;
   background-color: $back-bg;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header__list--client,

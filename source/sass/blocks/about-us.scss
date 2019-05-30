@@ -4,4 +4,8 @@
   @media (min-width: $tablet-width) {
     padding: 52px;
   }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+  }
 }

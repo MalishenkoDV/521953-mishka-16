@@ -20,9 +20,11 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
+    "gulp-uglyfly": "^1.4.2",
     "gulp-webp": "^4.0.1",
     "node-sass": "^4.12.0",
     "posthtml-include": "^1.2.0",
+    "run-sequence": "^2.2.1",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },

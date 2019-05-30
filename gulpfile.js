@@ -76,7 +76,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("build/img/sprite/*.svg")
+  return gulp.src("build/img/s-*.svg")
     .pipe(plumber())
     .pipe(svgstore({
       inlineSvg: true
@@ -97,7 +97,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("source/*.html", ["html"]);
-  gulp.watch("source/sass/**/*.scss", ["style"]);
+  gulp.watch("source/sass/**/*.sass", ["style"]);
   gulp.watch("source/js/**/*.js", ["script"]);
 });
 

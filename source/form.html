@@ -48,18 +48,18 @@
       <form class="main__form form" method="post" action="https://echo.htmlacademy.ru" autocomplete="on" name="form" id="knitting_form" accept-charset="utf-8">
         <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами чтобы уточнить детали.</p>
 
-        <fieldset class="form__fieldset fieldset">
-          <div>
+        <div class="fieldset__wrappper">
+          <fieldset class="form__fieldset fieldset">
             <legend class="fieldset-legend">Тип</legend>
             <input class="form__radio" type="radio" form="knitting_form" id="knitting_accessories" name="knitting" checked>
             <label class="form__lbl-radio" for="knitting_accessories">Аксессуар для  интерьера</label>
             <input class="form__radio" type="radio" form="knitting_form" id="knitting_toys" name="knitting">
             <label class="form__lbl-radio" for="knitting_toys">Детская игрушка</label>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <fieldset class="form__fieldset fieldset">
-          <div>
+        <div class="fieldset__wrappper">
+          <fieldset class="form__fieldset fieldset">
             <legend class="fieldset-legend">Цвет</legend>
             <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_white" checked>
             <label class="form__lbl-checbx" for="knitting_c_white">Белый</label>
@@ -73,11 +73,11 @@
             <label class="form__lbl-checbx" for="knitting_c_pink">Розовый</label>
             <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_orange">
             <label class="form__lbl-checbx" for="knitting_c_orange">Оранжевый</label>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <fieldset class="form__fieldset fieldset">
-          <div>
+        <div class="fieldset__wrappper">
+          <fieldset class="form__fieldset fieldset">
             <legend class="fieldset-legend">ФИО</legend>
             <label class="form__label" for="client_name">Имя:</label>
             <input class="form__input-text" type="text" name="name" placeholder="Введите ваше имя*" form="knitting_form" id="client_name" required>
@@ -85,26 +85,27 @@
             <input class="form__input-text" type="text" name="name" placeholder="Укажите фамилию*" form="knitting_form" id="client_surname" required>
             <label class="form__input-text" for="client_fathers">Отчество:</label>
             <input class="form__input-text" type="text" name="name" placeholder="Отчество, если желаете" form="knitting_form" id="client_fathers">
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <fieldset class="form__fieldset fieldset">
-          <div>
+        <div class="fieldset__wrappper">
+          <fieldset class="form__fieldset fieldset">
             <legend class="fieldset-legend fieldset-legend--tel">тел</legend>
             <label for="client_tel"></label>
             <input class="form__input-text" type="tel" name="phone"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" form="knitting_form" id="client_tel" required>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <fieldset class="form__fieldset fieldset">
-          <div>
+        <div class="fieldset__wrappper">
+          <fieldset class="form__fieldset fieldset">
             <legend class="fieldset-legend fieldset-legend--email">E-mail</legend>
             <label for="client_email"></label>
             <input class="form__input-text" type="email" placeholder="Ваш Email*" form="knitting_form" id="client_email" required>
-          </div>
-        </fieldset>
-        <div>
+          </fieldset>
+        </div>
+
+        <div class="fieldset__wrappper">
           <fieldset class="form__fieldset fieldset">
 
             <legend class="fieldset-legend">Доп</legend>

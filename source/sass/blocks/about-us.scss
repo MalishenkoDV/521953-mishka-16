@@ -1,5 +1,6 @@
 .about-us {
   padding: 30px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 52px;
@@ -8,4 +9,11 @@
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
   }
+}
+
+.about-us::after {
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  position: absolute;
+
 }

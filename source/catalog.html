@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="fonts/opensanslight.woff2" type="font/woff2" rel="preload" as="font">
     <link href="fonts/opensans.woff2" type="font/woff2" rel="preload" as="font">
     <link href="fonts/opensansbold.woff2" type="font/woff2" rel="preload" as="font">
@@ -21,17 +21,39 @@
     </div>
     <header class="header">
       <div class="logo-wrapper">
-          <a href="index.html" class="header__logo" aria-label="Мишка. Магазин вещей, сделанных врукопашную!"></a>
-        <button class="btn btn-burger" type="button"></button>
+        <a class="header__logo" href="index.html" aria-label="Мишка. Магазин вещей, сделанных врукопашную!"></a>
+
       </div>
-      <ul class="header__nav nav header__nav--site">
-        <li><a class="nav__item" href="catalog.html">Каталог товаров</a></li>
-        <li><a class="nav__item" href="form.html">Вязание на заказ</a></li>
-      </ul>
-      <ul class="header__nav nav header__nav--client">
-        <li><a class="nav__item nav__item--search" href="serch.html">Поиск по сайту</a></li>
-        <li><a class="nav__item nav__item--cart" href="cart.html">Корзина: пока пуста</a></li>
-      </ul>
+      <nav class="header__nav header__nav--nojs">
+        <button class="header__btn-burger btn" type="button"></button>
+        <div class="header__nav-wrapper">
+          <ul class="header__list nav header__list--site">
+            <li class="header__item"><a class="header__link" href="catalog.html">Каталог товаров</a></li>
+            <li class="header__item"><a class="header__link" href="form.html">Вязание на заказ</a></li>
+          </ul>
+
+          <ul class="header__list header__list--client">
+            <li class="header__item">
+              <a class="header__link header__link--search" href="#">
+                <svg class="icon-search" aria-label="search">
+                  <use xlink:href="#icon-search">
+                  </use>
+                </svg>
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link header__link--cart" href="#">
+                <svg class="icon-cart" aria-label="cart">
+                  <use xlink:href="#icon-cart">
+                  </use>
+                </svg>
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main class="main">
@@ -165,7 +187,7 @@
           </li>
           <li>
             <a class="social__btn social__btn--twit" target="_blank" href="https://twitter.com/htmlacademy_ru">
-              <svg class="icon-insta" aria-label="twitter">
+              <svg class="icon-twitter" aria-label="twitter">
                 <use xlink:href="#icon-twitter">
                 </use>
               </svg>
@@ -174,9 +196,8 @@
         </ul>
         <span class="footer__copyright">
           <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано
-            <img src="img/htmlacademy.svg" alt="Заходите на HTMLAcademy.ru" width="50" height="50">
-            <svg class="icon-htmlacademy" aria-label="htmlacademy">
-              <use xlink:href="#icon-htmlacademy">
+            <svg class="logo-htmlacademy" aria-label="Заходите на HTMLAcademy.ru" width="50" height="50">
+              <use xlink:href="#logo-htmlacademy">
               </use>
             </svg>
           </a>

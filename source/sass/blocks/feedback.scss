@@ -43,7 +43,7 @@
 .feedback__comment p {
   line-height: 2;
   font-size: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -59,7 +59,7 @@
 
 .container-btn {
   margin-bottom: 37px;
-  padding: 11px 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     background-color: #aaaaaa;
@@ -76,6 +76,36 @@
   border: 1px solid #ececec;
   font-size: 0;
   background-color: #ffffff;
+}
+
+.feedback__arrow--left {
+  position: static;
+  background-image: url("../../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feedback__arrow--left:hover {
+  opacity: 0.6;
+}
+
+.feedback__arrow--left:active {
+  opacity: 0.3;
+}
+
+.feedback__arrow--right {
+  position: static;
+  background-image: url("../../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feedback__arrow--right:hover {
+  opacity: 0.6;
+}
+
+.feedback__arrow--right:active {
+  opacity: 0.3;
 }
 
 .feedback__btn {

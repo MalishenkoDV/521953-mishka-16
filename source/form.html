@@ -2,7 +2,7 @@
   <html lang="ru">
     <head>
       <meta charset="utf-8">
-      <link href="css/style.css" rel="stylesheet">
+      <link href="css/style.min.css" rel="stylesheet">
       <link href="fonts/opensanslight.woff2" type="font/woff2" rel="preload" as="font">
       <link href="fonts/opensans.woff2" type="font/woff2" rel="preload" as="font">
       <link href="fonts/opensansbold.woff2" type="font/woff2" rel="preload" as="font">
@@ -19,19 +19,42 @@
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
+
     <header class="header">
       <div class="logo-wrapper">
-          <a class="header__logo" href="index.html" aria-label="Мишка. Магазин вещей, сделанных врукопашную!"></a>
-        <button class="btn btn-burger" type="button"></button>
+        <a class="header__logo" href="index.html" aria-label="Мишка. Магазин вещей, сделанных врукопашную!"></a>
+
       </div>
-      <ul class="header__nav nav header__nav--site">
-        <li><a class="nav__item" href="catalog.html">Каталог товаров</a></li>
-        <li><a class="nav__item" href="form.html">Вязание на заказ</a></li>
-      </ul>
-      <ul class="header__nav nav header__nav--client">
-        <li><a class="nav__item nav__item--search" href="serch.html">Поиск по сайту</a></li>
-        <li><a class="nav__item nav__item--cart" href="cart.html">Корзина: пока пуста</a></li>
-      </ul>
+      <nav class="header__nav header__nav--nojs">
+        <button class="header__btn-burger btn" type="button"></button>
+        <div class="header__nav-wrapper">
+          <ul class="header__list nav header__list--site">
+            <li class="header__item"><a class="header__link" href="catalog.html">Каталог товаров</a></li>
+            <li class="header__item"><a class="header__link" href="form.html">Вязание на заказ</a></li>
+          </ul>
+
+          <ul class="header__list header__list--client">
+            <li class="header__item">
+              <a class="header__link header__link--search" href="#">
+                <svg class="icon-search" aria-label="search">
+                  <use xlink:href="#icon-search">
+                  </use>
+                </svg>
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link header__link--cart" href="#">
+                <svg class="icon-cart" aria-label="cart">
+                  <use xlink:href="#icon-cart">
+                  </use>
+                </svg>
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main class="main">
       <div class="main__site-theme site__themes">
@@ -92,7 +115,7 @@
           <fieldset class="form__fieldset fieldset">
             <legend class="fieldset-legend fieldset-legend--tel">тел</legend>
             <label for="client_tel"></label>
-            <input class="form__input-text" type="tel" name="phone"
+            <input class="form__input-text  form__input-text--tel" type="tel" name="phone"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" form="knitting_form" id="client_tel" required>
           </fieldset>
         </div>
@@ -101,7 +124,7 @@
           <fieldset class="form__fieldset fieldset">
             <legend class="fieldset-legend fieldset-legend--email">E-mail</legend>
             <label for="client_email"></label>
-            <input class="form__input-text" type="email" placeholder="Ваш Email*" form="knitting_form" id="client_email" required>
+            <input class="form__input-text form__input-text--email" type="email" placeholder="Ваш Email*" form="knitting_form" id="client_email" required>
           </fieldset>
         </div>
 
@@ -109,25 +132,51 @@
           <fieldset class="form__fieldset fieldset">
 
             <legend class="fieldset-legend">Доп</legend>
-            <textarea class="form__input-text" name="text" rows="3" placeholder="Опишите все ваши пожелания к заказу" form="knitting_form" id="client_comment"></textarea>
+            <textarea class="form__input-text form__input-text--textarea" name="text" rows="3" placeholder="Опишите все ваши пожелания к заказу" form="knitting_form" id="client_comment"></textarea>
 
           </fieldset>
         </div>
-        <span class="form__note">*Поля обязательны для заполнения</span>
-        <button class="form__btn btn" type="submit" form="knitting_form">ОТПРАВИТЬ ЗАКАЗ</button>
 
       </form>
     </main>
     <footer class="footer">
-      <a class="footer__logo logo" href="#"><img src="img/logo-mobile.svg" alt="Магазин Мишка"></a>
-      <ul class="footer__social social">
-        <li><a class="social__btn social__btn--inst" target="_blank" href="https://www.instagram.com/htmlacademy/"><img src="img/icon-insta.svg" alt="instagram"></a></li>
-        <li><a class="social__btn social__btn--fb" target="_blank" href="https://www.facebook.com/htmlacademy"><img src="img/icon-fb.svg" alt="facebook"></a></li>
-        <li><a class="social__btn social__btn--twit" target="_blank" href="https://twitter.com/htmlacademy_ru"><img src="img/icon-twitter.svg" alt="twiter"></a></li>
-      </ul>
-      <span class="footer__copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive">Разработано <img src="img/htmlacademy.svg" alt="Заходите на HTMLAcademy.ru" width="50" height="50"></a>
-      </span>
+      <div>
+        <a class="footer__logo logo" href="#"><img src="img/logo-mobile.svg" alt="Магазин Мишка"></a>
+        <ul class="footer__social social">
+          <li>
+            <a class="social__btn social__btn--inst" target="_blank" href="https://www.instagram.com/htmlacademy/">
+              <svg class="icon-insta" aria-label="instagram">
+                <use xlink:href="#icon-insta">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__btn social__btn--fb" target="_blank" href="https://www.facebook.com/htmlacademy">
+              <svg class="icon-fb" aria-label="facebook">
+                <use xlink:href="#icon-fb">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__btn social__btn--twit" target="_blank" href="https://twitter.com/htmlacademy_ru">
+              <svg class="icon-twitter" aria-label="twitter">
+                <use xlink:href="#icon-twitter">
+                </use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <span class="footer__copyright">
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано
+            <svg class="logo-htmlacademy" aria-label="Заходите на HTMLAcademy.ru" width="50" height="50">
+              <use xlink:href="#logo-htmlacademy">
+              </use>
+            </svg>
+          </a>
+        </span>
+      </div>
     </footer>
     <script src="js/main.js"></script>
   </body>

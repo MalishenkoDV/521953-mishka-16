@@ -5,6 +5,7 @@
   display: block;
   padding: 20px 0;
   font-weight: 700;
+  border: 2px solid $greyish-brown;
 
   @media (min-width: $tablet-width) {
     width: 40%;
@@ -16,6 +17,7 @@
 .btn:hover,
 .btn:focus {
   color: $light-text;
+  background-color: $greyish-brown;
 }
 
 .btn:active {

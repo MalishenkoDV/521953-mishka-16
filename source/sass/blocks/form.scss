@@ -5,6 +5,7 @@
 }
 
 .form__description {
+  width: 242px;
   margin-top: -5px;
   padding-bottom: 18px;
   line-height: 1.75;
@@ -18,12 +19,123 @@
 }
 
 .form__input-text {
-  width: 100%;
+  width: 90%;
+  position: relative;
+  padding-right: 76px;
+}
+
+.form__input-text::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.form__input-text--tel::before {
+  width: 32px;
+  height: 21px;
+  background-image: url("../img/icon-phone.svg");
+}
+
+.form__input-text--email::before {
+  width: 25px;
+  height: 24px;
+  background-image: url("../img/icon-mail.svg");
 }
 
 .form__radio,
 .form__input {
   display: none;
+}
+
+.form__fieldset {
+  position: relative;
+}
+
+.form__fieldset::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 62px;
+  width: 189px;
+  height: 1px;
+  background-color: $seafoam-blue;
+}
+
+.form__input-text--textarea {
+  width: 90%;
+  border: 2px solid $greyish-brown;
+}
+
+.form__lbl-radio {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.form__fieldset:first-child .form__lbl-radio {
+  padding-right: 103px;
+}
+
+.form__lbl-radio::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: $back-bg;
+  border: 2px solid $greyish-brown;
+}
+
+.form__radio:checked + .form__lbl-radio::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 13px;
+  z-index: 10;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-color: $seafoam-blue;
+  border-radius: 50%;
+}
+
+.form__lbl-checbx {
+  position: relative;
+  padding-bottom: 23px;
+}
+
+.form__lbl-checbx::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 40px;
+  height: 39px;
+  background-color: $back-bg;
+  border: 2px solid $greyish-brown;
+  display: inline-block;
+  z-index: 1;
+}
+
+.form__input:checked + .form__lbl-checbx::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 18px;
+  z-index: 100;
+  width: 32.666px;
+  height: 22.742px;
+  display: inline-block;
+  background-image: url("../img/icon-tick.svg");
+  fill: $greyish-brown;
+  background-repeat: no-repeat;
 }
 
 .form__note {
@@ -39,10 +151,6 @@
 .form__lbl-checbx,
 .form__lbl-radio {
   padding-left: 64px;
-}
-
-.form__lbl-checbx {
-  padding-bottom: 23px;
 }
 
 .form__lbl-checbx:last-of-type {

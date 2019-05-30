@@ -16,12 +16,14 @@
 .header__logo {
   width: 200px;
   height: 80px;
+  margin-left: -22px;
   display: inline-block;
   background-image: url("../img/logo-mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     align-content: flex-start;
     height: 80px;
     background-image: url("../img/logo-tablet.svg");

@@ -17,14 +17,45 @@
   opacity: 0.3;
 }
 
-.icon-insta,
-.icon-fb,
-.icon-twitter {
-  width: 60px;
-  height: 60px;
+.icon-insta {
+  width: 22px;
+  height: 21px;
+}
+
+.icon-fb {
+  width: 15px;
+  height: 28px;
+}
+
+.icon-twitter{
+  width: 23px;
+  height: 20px;
+}
+
+.icon-insta:hover,
+.icon-fb:hover,
+.icon-twitter:hover {
+  fill: $aqua-marine-two;
+  opacity: 1;
+}
+
+.icon-insta:active,
+.icon-fb:active,
+.icon-twitter:active {
+  fill: $aqua-marine-two;
+  opacity: 0.3;
 }
 
 .logo-htmlacademy {
-  width: 70px;
-  height: 70px;
+  width: 27px;
+  height: 34px;
+  fill: $seafoam-blue;
+}
+
+.logo-htmlacademy:hover {
+  fill: $aqua-marine-two;
+}
+
+.logo-htmlacademy:active {
+  opacity: 0.3;
 }

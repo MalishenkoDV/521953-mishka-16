@@ -58,12 +58,6 @@
   }
 }
 
-.header__item {
-  @media (min-width: $tablet-width) {
-    border-left: 1px solid red;
-  }
-}
-
 .header__list--site {
   @media (min-width: $tablet-width) {
     position: absolute;

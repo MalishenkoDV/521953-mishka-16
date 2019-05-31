@@ -67,3 +67,9 @@
     margin: auto;
   }
 }
+
+.main__wrapper {
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  height: 6px;
+}

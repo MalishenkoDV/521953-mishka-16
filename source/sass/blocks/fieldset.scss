@@ -17,9 +17,6 @@
   margin-bottom: 0;
 }
 
-.fieldset__container {
-  margin: 0 50px;
-}
 
 .fieldset__container--checbx {
   margin: 46px 0;
@@ -28,7 +25,6 @@
     width: 35%;
     margin: 66px 0;
     padding-left: 203px;
-    padding-right: 117px;
     box-sizing: border-box;
   }
 }
@@ -49,12 +45,14 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 20px;
+    top: 69px;
     left: 52px;
   }
 }
 
 .form .fieldset__container--data {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     width: 70%;
     margin: 0;
@@ -66,10 +64,8 @@
 .fieldset input[type="tel"],
 .fieldset input[type="email"] {
   border: none;
-  margin-bottom: 15px;
   padding: 15px;
   outline: 0;
-  border-bottom: 2px solid #000000;
   background-color: inherit;
 }
 
@@ -91,4 +87,21 @@
 .fieldset-legend--tel,
 .fieldset-legend--email {
   margin: 0;
+}
+
+.fieldset__container--contacts {
+  position: relative;
+  margin: 0;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 15px;
+}
+
+.fieldset__container--data {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 219px;
+    flex-direction: row;
+  }
 }

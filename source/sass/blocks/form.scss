@@ -7,17 +7,17 @@
 .form__description {
   width: 242px;
   margin-top: -5px;
-  margin-bottom: 79px;
-  padding-bottom: 18px;
-  line-height: 1.75;
-  font-size: 14px;
-  font-weight: 300;
+  margin-bottom: 36px;
+  line-height: 1.85;
+  font-size: 13px;
+  color: $greyish-brown;
 
   @media (min-width: $tablet-width) {
     line-height: 1.76;
     font-size: 17px;
     font-weight: 300;
     width: 612px;
+    margin-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +28,8 @@
 
 .form__lbl-checbx,
 .form__lbl-radio {
-  line-height: 1.2;
+  font-size: 19px;
+  line-height: 0.95;
   font-weight: 700;
   margin: 18px 0;
   display: block;
@@ -52,6 +53,9 @@
 .form__input-text {
   width: 70%;
   position: relative;
+  font-size: 17px;
+  line-height: 1.06;
+  font-weight: 400;
 }
 
 .form__input-text::before {
@@ -73,10 +77,15 @@
   position: relative;
 }
 
-.fieldset__container--data {
-  margin-left: 219px;
-  display: flex;
+
+.form .form__input-text--data {
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 16px;
+  }
 }
+
 
 .form .form__input-text--tel,
 .form .form__input-text--email {
@@ -102,8 +111,13 @@
 }
 
 .form .form__input-text--textarea {
+  height: 142px;
   border: 2px solid $greyish-brown;
   width: 100%;
+}
+
+.form__input-text--textarea::placeholder {
+  opacity: 0.3;
 }
 
 .form .form__lbl-radio {
@@ -112,7 +126,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
-    margin-left: 217px;
+    margin-left: 182px;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,7 +158,7 @@
   border: 2px solid $greyish-brown;
 
   @media (min-width: $tablet-width) {
-    width: 52px;
+    width: 54px;
     height: 53px;
   }
 }
@@ -156,7 +170,8 @@
 
 .form__lbl-radio:active::before,
 .form__lbl-checbx:active::before {
-  border: 2px solid $light-grey-bg;
+  border: 2px solid $greyish-brown;
+  opacity: 0.3;
 }
 
 .form__radio:checked + .form__lbl-radio::after {
@@ -265,14 +280,9 @@
   padding-bottom: 0;
 }
 
-.form__fieldset--checbx {
+.fieldset__container--checbx {
   @media (min-width: $tablet-width) {
     width: auto;
     display: flex;
   }
-}
-
-.fieldset__container--checbx {
-  flex-direction: row;
-  flex-wrap: wrap;
 }

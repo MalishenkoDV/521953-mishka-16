@@ -16,7 +16,7 @@
       <script src="js/picturefill.min.js" async></script>
     </head>
   <body>
-    <div style="display: none">
+    <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
 
@@ -74,28 +74,42 @@
         <div class="fieldset__wrappper">
           <fieldset class="form__fieldset fieldset">
             <legend class="fieldset-legend">Тип</legend>
-            <input class="form__radio" type="radio" form="knitting_form" id="knitting_accessories" name="knitting" checked>
-            <label class="form__lbl-radio" for="knitting_accessories">Аксессуар для  интерьера</label>
-            <input class="form__radio" type="radio" form="knitting_form" id="knitting_toys" name="knitting">
-            <label class="form__lbl-radio" for="knitting_toys">Детская игрушка</label>
+            <div class="fieldset__container">
+              <input class="form__radio" type="radio" form="knitting_form" id="knitting_accessories" name="knitting" checked>
+              <label class="form__lbl-radio" tabindex="0" for="knitting_accessories" tabindex="0">Аксессуар для  интерьера</label>
+              <input class="form__radio" type="radio" form="knitting_form" id="knitting_toys" name="knitting">
+              <label class="form__lbl-radio" tabindex="0" for="knitting_toys" tabindex="0">Детская игрушка</label>
+            </div>
           </fieldset>
         </div>
 
         <div class="fieldset__wrappper">
           <fieldset class="form__fieldset fieldset">
             <legend class="fieldset-legend">Цвет</legend>
-            <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_white" checked>
-            <label class="form__lbl-checbx" for="knitting_c_white">Белый</label>
-            <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_grey" checked>
-            <label class="form__lbl-checbx" for="knitting_c_grey">Серый</label>
-            <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_tiffany">
-            <label class="form__lbl-checbx" for="knitting_c_tiffany">«Тиффани»</label>
-            <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_black">
-            <label class="form__lbl-checbx" for="knitting_c_black">Черный</label>
-            <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_pink">
-            <label class="form__lbl-checbx" for="knitting_c_pink">Розовый</label>
-            <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_orange">
-            <label class="form__lbl-checbx" for="knitting_c_orange">Оранжевый</label>
+            <div class="fieldset__container fieldset__container--checbx">
+              <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_white" checked>
+              <label class="form__lbl-checbx" for="knitting_c_white" tabindex="0">Белый</label>
+            </div>
+            <div class="fieldset__container fieldset__container--checbx">
+              <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_grey" checked>
+              <label class="form__lbl-checbx" for="knitting_c_grey" tabindex="0">Серый</label>
+            </div>
+            <div class="fieldset__container fieldset__container--checbx">
+              <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_tiffany">
+              <label class="form__lbl-checbx" for="knitting_c_tiffany" tabindex="0">«Тиффани»</label>
+            </div>
+            <div class="fieldset__container fieldset__container--checbx">
+              <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_black">
+              <label class="form__lbl-checbx" for="knitting_c_black" tabindex="0">Черный</label>
+            </div>
+            <div class="fieldset__container fieldset__container--checbx">
+              <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_pink">
+              <label class="form__lbl-checbx" for="knitting_c_pink" tabindex="0">Розовый</label>
+            </div>
+            <div class="fieldset__container fieldset__container--checbx">
+              <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_orange">
+              <label class="form__lbl-checbx" for="knitting_c_orange" tabindex="0">Оранжевый</label>
+            </div>
           </fieldset>
         </div>
 

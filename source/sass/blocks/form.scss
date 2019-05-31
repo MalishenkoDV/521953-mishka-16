@@ -7,14 +7,36 @@
 .form__description {
   width: 242px;
   margin-top: -5px;
+  margin-bottom: 79px;
   padding-bottom: 18px;
   line-height: 1.75;
   font-size: 14px;
   font-weight: 300;
 
+  @media (min-width: $tablet-width) {
+    width: 612px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 675px;
     margin: auto;
+  }
+}
+
+.form__lbl-checbx,
+.form__lbl-radio {
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 18px 0;
+  display: block;
+  padding-left: 64px;
+}
+
+.form__label {
+  margin: 5px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 15px 0;
   }
 }
 
@@ -34,18 +56,6 @@
   z-index: 10;
 }
 
-.form__input-text--tel::before {
-  width: 32px;
-  height: 21px;
-  background-image: url("../img/icon-phone.svg");
-}
-
-.form__input-text--email::before {
-  width: 25px;
-  height: 24px;
-  background-image: url("../img/icon-mail.svg");
-}
-
 .form__radio,
 .form__input {
   display: none;
@@ -63,20 +73,38 @@
   width: 189px;
   height: 1px;
   background-color: $seafoam-blue;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.form__input-text--textarea {
+.form .form__input-text--textarea {
   width: 90%;
   border: 2px solid $greyish-brown;
 }
 
-.form__lbl-radio {
+.form .form__lbl-radio {
   position: relative;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .form__fieldset:first-child .form__lbl-radio {
   padding-right: 103px;
+}
+
+.form:nth-child(n+2) .form__fieldset {
+  @media (min-width: $tablet-width) {
+    background-color: $light-grey-bg;
+  }
 }
 
 .form__lbl-radio::before {
@@ -93,6 +121,16 @@
   border: 2px solid $greyish-brown;
 }
 
+.form__lbl-radio:focus::before,
+.form__lbl-checbx:focus::before {
+  border: 2px solid $seafoam-blue;
+}
+
+.form__lbl-radio:active::before,
+.form__lbl-checbx:active::before {
+  border: 2px solid $light-grey-bg;
+}
+
 .form__radio:checked + .form__lbl-radio::after {
   content: "";
   position: absolute;
@@ -106,7 +144,7 @@
   border-radius: 50%;
 }
 
-.form__lbl-checbx {
+.form .form__lbl-checbx {
   position: relative;
   padding-bottom: 23px;
 }
@@ -146,11 +184,6 @@
 .form__btn {
   width: 100%;
   background-color: #ffffff;
-}
-
-.form__lbl-checbx,
-.form__lbl-radio {
-  padding-left: 64px;
 }
 
 .form__lbl-checbx:last-of-type {

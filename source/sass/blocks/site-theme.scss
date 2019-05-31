@@ -1,8 +1,8 @@
 .site-theme__list {
+  @include clear-list-style;
   display: none;
 
   @media (min-width: $desktop-width) {
-    @include clear-list-style;
     display: flex;
     flex-wrap: wrap;
   }

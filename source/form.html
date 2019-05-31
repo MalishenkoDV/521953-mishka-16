@@ -84,7 +84,7 @@
         </div>
 
         <div class="fieldset__wrappper">
-          <fieldset class="form__fieldset fieldset">
+          <fieldset class="form__fieldset fieldset form__fieldset--checbx">
             <legend class="fieldset-legend">Цвет</legend>
             <div class="fieldset__container fieldset__container--checbx">
               <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_white" checked>
@@ -116,49 +116,61 @@
         <div class="fieldset__wrappper">
           <fieldset class="form__fieldset fieldset">
             <legend class="fieldset-legend">ФИО</legend>
-            <label class="form__label" for="client_name">Имя:</label>
-            <input class="form__input-text" type="text" name="name" placeholder="Введите ваше имя*" form="knitting_form" id="client_name" required>
-            <label class="form__label" for="client_surname">Фамилия:</label>
-            <input class="form__input-text" type="text" name="name" placeholder="Укажите фамилию*" form="knitting_form" id="client_surname" required>
-            <label class="form__input-text" for="client_fathers">Отчество:</label>
-            <input class="form__input-text" type="text" name="name" placeholder="Отчество, если желаете" form="knitting_form" id="client_fathers">
+            <div class="fieldset__container fieldset__container--data">
+              <label class="form__label form__label--text" for="client_name">Имя:</label>
+              <input class="form__input-text" type="text" name="name" placeholder="Введите ваше имя*" form="knitting_form" id="client_name" required>
+            </div>
+            <div class="fieldset__container fieldset__container--data">
+              <label class="form__label form__label--text" for="client_surname">Фамилия:</label>
+              <input class="form__input-text" type="text" name="name" placeholder="Укажите фамилию*" form="knitting_form" id="client_surname" required>
+            </div>
+            <div class="fieldset__container fieldset__container--data">
+              <label class="form__label form__label--text" for="client_fathers">Отчество:</label>
+              <input class="form__input-text" type="text" name="name" placeholder="Отчество, если желаете" form="knitting_form" id="client_fathers">
+            </div>
           </fieldset>
         </div>
 
-        <div class="fieldset__wrappper">
-          <fieldset class="form__fieldset fieldset">
+        <div class="fieldset__wrappper fieldset__wrappper--tel">
+          <fieldset class="form__fieldset fieldset form__fieldset--tel">
             <legend class="fieldset-legend fieldset-legend--tel">тел</legend>
-            <label for="client_tel"></label>
-            <input class="form__input-text  form__input-text--tel" type="tel" name="phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" form="knitting_form" id="client_tel" required>
-            <svg class="icon-phone" aria-label="phone">
-              <use xlink:href="#icon-phone">
-              </use>
-            </svg>
+            <div class="fieldset__container fieldset__container--contacts">
+              <label class="fieldset__lbl" for="client_tel"></label>
+              <input class="form__input-text  form__input-text--tel" type="tel" name="phone"
+                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" form="knitting_form" id="client_tel" required>
+              <svg class="icon-phone" aria-label="phone">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </div>
           </fieldset>
         </div>
 
         <div class="fieldset__wrappper">
           <fieldset class="form__fieldset fieldset">
             <legend class="fieldset-legend fieldset-legend--email">E-mail</legend>
-            <label for="client_email"></label>
-            <input class="form__input-text form__input-text--email" type="email" placeholder="Ваш Email*" form="knitting_form" id="client_email" required>
-            <svg class="icon-mail" aria-label="mail">
-              <use xlink:href="#icon-mail">
-              </use>
-            </svg>
+            <div class="fieldset__container fieldset__container--contacts">
+              <label class="fieldset__lbl" for="client_email"></label>
+              <input class="form__input-text form__input-text--email" type="email" placeholder="Ваш Email*" form="knitting_form" id="client_email" required>
+              <svg class="icon-mail" aria-label="mail">
+                <use xlink:href="#icon-mail">
+                </use>
+              </svg>
+            </div>
           </fieldset>
         </div>
 
         <div class="fieldset__wrappper">
           <fieldset class="form__fieldset fieldset">
-
+           <div class="fieldset__container fieldset__container--textarea">
             <legend class="fieldset-legend">Доп</legend>
             <textarea class="form__input-text form__input-text--textarea" name="text" rows="3" placeholder="Опишите все ваши пожелания к заказу" form="knitting_form" id="client_comment"></textarea>
-
+          </div>
           </fieldset>
         </div>
-
+        <div class="form__fieldset-btn">
+            <p class="form__description-btn">*-Поля обязательные для заполнения</p>
+          <button type="submit" class="btn form__btn">Отправить заказ</button>
+        </div>
       </form>
     </main>
     <footer class="footer">

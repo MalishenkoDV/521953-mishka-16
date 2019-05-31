@@ -62,13 +62,14 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 80px;
+    left: 0;
     padding: 0;
     z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     top: 0;
+    left: 0;
     order: -1;
   }
 }
@@ -83,7 +84,7 @@
   @media (min-width: $desktop-width) {
     font-size: 17px;
     border: 1px solid red;
-    padding: 30px 20px;
+    padding: 26px 20px;
   }
 }
 

@@ -13,6 +13,14 @@
   }
 }
 
+.form__fieldset--tel {
+  margin-bottom: 0;
+}
+
+.fieldset__container {
+  margin: 0 50px;
+}
+
 .fieldset__container--checbx {
   margin: 46px 0;
 
@@ -41,8 +49,16 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 69px;
+    top: 20px;
     left: 52px;
+  }
+}
+
+.form .fieldset__container--data {
+  @media (min-width: $tablet-width) {
+    width: 70%;
+    margin: 0;
+    margin-left: 217px;
   }
 }
 
@@ -54,6 +70,7 @@
   padding: 15px;
   outline: 0;
   border-bottom: 2px solid #000000;
+  background-color: inherit;
 }
 
 .fieldset input[type="text"]:focus,
@@ -62,8 +79,13 @@
   border-bottom: 2px solid #62d1ba;
 }
 
-.fieldset textarea {
+.fieldset__container--textarea {
   height: 142px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 128px;
+    width: 501px;
+  }
 }
 
 .fieldset-legend--tel,

@@ -1,3 +1,12 @@
+.product__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__description {
+ width: 38%;
+}
+
 .product {
   padding: 30px;
   position: relative;
@@ -7,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -117,7 +127,9 @@
     order: 1;
     width: 50%;
     align-self: flex-end;
-    margin-top: -300px;
+    margin-top: -200px;
+    position: absolute;
+    right: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,6 +140,9 @@
   }
 }
 
+.product__img picture {
+  width: auto;
+}
 .product__price {
   text-align: center;
   margin: 21px;

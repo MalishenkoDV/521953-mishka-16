@@ -2,11 +2,18 @@
   margin: 0;
   padding: 30px;
   font-size: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-top: 80px;
+  }
 }
 
 .form__description {
   width: 242px;
   margin-top: -5px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 36px;
   line-height: 1.85;
   font-size: 13px;
@@ -23,11 +30,15 @@
   @media (min-width: $desktop-width) {
     width: 675px;
     margin: auto;
+    margin-left: 225px;
+    margin-bottom: 79px;
+    margin-top: 112px;
   }
 }
 
 .form__lbl-checbx,
 .form__lbl-radio {
+  position: relative;
   font-size: 19px;
   line-height: 0.95;
   font-weight: 700;
@@ -51,11 +62,29 @@
 }
 
 .form__input-text {
-  width: 70%;
+  width: 90%;
   position: relative;
   font-size: 17px;
   line-height: 1.06;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 0.95;
+  }
+}
+
+.form__input-text::placeholder,
+.form__input-text::placeholder:hover {
+  opacity: 0.3;
+}
+
+.form__input-text::placeholder:active {
+  color: $greyish-brown;
+}
+
+.form__input-text:hover .icon {
+  fill: $seafoam-blue;
 }
 
 .form__input-text::before {
@@ -77,7 +106,6 @@
   position: relative;
 }
 
-
 .form .form__input-text--data {
   padding-left: 0;
 
@@ -86,7 +114,6 @@
   }
 }
 
-
 .form .form__input-text--tel,
 .form .form__input-text--email {
   @media (min-width: $tablet-width) {
@@ -94,6 +121,15 @@
     margin-bottom: 0;
     margin-left: 217px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: 52px;
+  }
+}
+
+.form__fieldset--contacts {
+  // width: 85%;
 }
 
 .form__fieldset::before {
@@ -120,25 +156,44 @@
   opacity: 0.3;
 }
 
+.form__input-text--textarea:active::placeholder {
+  color: $greyish-brown;
+}
+
+.form__input-text--textarea:hover,
+.form__input-text--textarea:active {
+  border: 2px solid $seafoam-blue;
+}
+
+.form__input-text:hover,
+.form__input-text:active {
+  border: 2px solid $seafoam-blue;
+}
+
 .form .form__lbl-radio {
   position: relative;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
-    margin-left: 182px;
+    margin-left: 210px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 67px;
+    margin-left: 112px;
   }
 }
 
 .form__fieldset:first-child .form__lbl-radio {
   padding-right: 103px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+  }
 }
 
-.form:nth-child(n+2) .form__fieldset {
+.fieldset__wrapper:nth-of-type(even) {
   @media (min-width: $tablet-width) {
     background-color: $light-grey-bg;
   }
@@ -158,8 +213,8 @@
   border: 2px solid $greyish-brown;
 
   @media (min-width: $tablet-width) {
-    width: 54px;
-    height: 53px;
+    width: 47px;
+    height: 48px;
   }
 }
 
@@ -240,6 +295,7 @@
 
 .form__fieldset-btn {
   @media (min-width: $tablet-width) {
+    margin: 0 50px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -256,7 +312,7 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 1.76;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 

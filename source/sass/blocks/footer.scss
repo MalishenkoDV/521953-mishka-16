@@ -1,5 +1,4 @@
 .footer {
-  padding: 30px;
   background-color: $light-grey-bg;
 
   @media (min-width: $tablet-width) {
@@ -27,11 +26,13 @@
 
 .footer__social {
   padding: 0;
+  padding-bottom: 20px;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+  justify-content: center;
   border-bottom: 1px solid #000000;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -42,18 +43,21 @@
   margin: 0 10px;
   width: 20px;
   height: 20px;
-  padding: 20px;
+  padding: 15px;
 }
 
 .footer__copyright {
   font-size: 19px;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     align-self: center;
   }
 }
 
-.footer__copyright img {
+.footer__copyright svg {
   vertical-align: middle;
+  padding-left: 30px;
 }

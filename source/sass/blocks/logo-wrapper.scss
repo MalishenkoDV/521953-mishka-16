@@ -1,18 +1,20 @@
 .logo-wrapper {
   box-sizing: border-box;
   height: 80px;
-  width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
   border-bottom: 2px solid #ececec;
 
   @media (min-width: $tablet-width) {
     align-content: flex-start;
     text-align: left;
     position: relative;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    left: 135px;
+    align-self: center;
+    margin-right: 90px;
   }
 }

@@ -8,8 +8,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     position: relative;
+    margin-left: 225px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -22,13 +26,11 @@
   margin: 46px 0;
 
   @media (min-width: $tablet-width) {
-    width: 35%;
     margin: 66px 0;
     padding-left: 203px;
     box-sizing: border-box;
   }
 }
-
 
 .fieldset__wrapper {
   @media (min-width: $tablet-width) {
@@ -36,7 +38,7 @@
   }
 }
 
-.fieldset-legend {
+.fielset__legen {
   text-transform: uppercase;
   font-weight: 700;
   color: #63d1bb;
@@ -47,6 +49,11 @@
     position: absolute;
     top: 69px;
     left: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 114px;
   }
 }
 
@@ -64,9 +71,9 @@
 .fieldset input[type="tel"],
 .fieldset input[type="email"] {
   border: none;
-  padding: 15px;
   outline: 0;
   background-color: inherit;
+  border-bottom: 2px solid $greyish-brown;
 }
 
 .fieldset input[type="text"]:focus,
@@ -75,25 +82,42 @@
   border-bottom: 2px solid #62d1ba;
 }
 
+.fieldset__container {
+  @media (min-width: $tablet-width) {
+    width: 95%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 114px;
+  }
+}
+
 .fieldset__container--textarea {
   height: 142px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 128px;
+    margin-left: 217px;
     width: 501px;
   }
 }
 
-.fieldset-legend--tel,
-.fieldset-legend--email {
+.fielset__legen--tel,
+.fielset__legen--email {
   margin: 0;
 }
 
 .fieldset__container--contacts {
   position: relative;
   margin: 0;
-  border-bottom: 2px solid #000000;
   margin-bottom: 15px;
+  width: 85%;
+  margin-left: 57px;
+}
+
+.fieldset__wrapper--tel {
+  @media (min-width: $tablet-width) {
+    padding: 50px 0;
+  }
 }
 
 .fieldset__container--data {

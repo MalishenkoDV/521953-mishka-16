@@ -65,6 +65,10 @@
   top: 10px;
   right: 8px;
   opacity: 0.2;
+
+  @media (min-width: $desktop-width) {
+    right: -30px;
+  }
 }
 
 .icon-phone {

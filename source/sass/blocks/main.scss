@@ -1,6 +1,10 @@
 .main {
   font-weight: 400;
 
+  @media (min-width: $tablet-width) {
+    margin: auto;
+  }
+
   @media (min-width: $desktop-width) {
     width: 100%;
   }
@@ -11,6 +15,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    margin: auto;
   }
 
   @media (min-width: $desktop-width) {

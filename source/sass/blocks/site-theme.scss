@@ -15,6 +15,11 @@
     left: 50px;
   }
 }
+.site-theme__list1 li {
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
+  }
+}
 
 .site-theme__list2 {
   @media (min-width: $tablet-width) {

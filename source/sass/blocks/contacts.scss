@@ -1,4 +1,6 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
   @media (min-width: $tablet-width) {
     width: 100%;
     margin: 52px;
@@ -14,6 +16,11 @@
 }
 
 .contacts__map {
+  max-height: 480px;
+  display: inline-block;
+  align-self: center;
+
+
   @media (min-width: $desktop-width) {
     margin-top: -500px;
     align-self: flex-end;

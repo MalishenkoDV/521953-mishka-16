@@ -2,7 +2,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    padding: 0 52px;
+    padding: 0;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     align-content: flex-start;
-    height: 80px;
+    height: 87px;
     background-image: url("../img/logo-tablet.svg");
     background-repeat: no-repeat;
     background-position: center;

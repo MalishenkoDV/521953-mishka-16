@@ -1,15 +1,18 @@
 .footer {
   background-color: $light-grey-bg;
+  width: 100%;
+}
+
+.footer div {
+    width: auto;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    padding: 0 50px;
     display: flex;
     justify-content: space-around;
     align-content: center;
   }
-}
 
-.footer div {
   @media (min-width: $desktop-width) {
     width: 1150px;
     margin: auto;
@@ -36,6 +39,8 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    padding: 0;
+    margin-left: 150px;
   }
 }
 

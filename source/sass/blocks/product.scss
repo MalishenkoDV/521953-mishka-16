@@ -129,7 +129,7 @@
     align-self: flex-end;
     margin-top: -200px;
     position: absolute;
-    right: 30px;
+    right: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -149,7 +149,7 @@
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
-    width: 40%;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -162,5 +162,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: auto;
   }
 }

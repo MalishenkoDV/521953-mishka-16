@@ -25,8 +25,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
     position: absolute;
-    right: 60px;
-    top: 20px;
+    right: 50px;
+    letter-spacing: -1px;
+    top: 0;
   }
 }
 
@@ -40,6 +41,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
+    padding-top: 150px;
     width: auto;
     margin: 0 80px;
     line-height: 1.16;

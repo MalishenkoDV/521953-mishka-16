@@ -1,4 +1,8 @@
 
+* {
+  outline: 1px solid red;
+}
+
 body {
   font-family: "Open Sans", "Tahoma", sans-serif;
   font-weight: 400;
@@ -21,7 +25,8 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  padding: 0;margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 p {

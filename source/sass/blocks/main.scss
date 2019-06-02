@@ -34,6 +34,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
+    padding: 82px 30px 92px;
   }
 }
 
@@ -82,12 +83,17 @@
 .main__wrapper {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: block;
+    height: 20px;
     background-image: url("../../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-size: 15%;
-    height: 32px;
+    background-size: 12% 100%;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 12% 100%;
+    height: 32px;
   }
 }

@@ -85,3 +85,18 @@
 .header__link--cart .icon-cart {
   margin-right: 20px;
 }
+
+.logo-footer {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 102px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 130px;
+    top: 45px;
+  }
+}

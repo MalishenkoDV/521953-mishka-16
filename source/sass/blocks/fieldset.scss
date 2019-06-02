@@ -1,6 +1,6 @@
 .fieldset {
   border: none;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -23,7 +23,7 @@
 
 
 .form .fieldset__container--checbx {
-  margin: 46px 0;
+  margin: 0 0 8px;
 
   @media (min-width: $tablet-width) {
     width: 35%;
@@ -33,7 +33,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 258px;
+    width: 300px;
+    margin: 46px 0 0;
+  }
+}
+
+.form .fieldset__container--checbx:nth-last-of-type(4),
+.form .fieldset__container--checbx:nth-last-of-type(5),
+.form .fieldset__container--checbx:nth-last-of-type(6) {
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
 
@@ -41,6 +50,15 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.fieldset__wrapper--radio {
+  margin-bottom: 25px;
+  margin-top: -3px;
 }
 
 .fieldset__title {
@@ -49,7 +67,7 @@
   color: #63d1bb;
   font-size: 17px;
   line-height: 0.94;
-  margin-bottom: 13px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -59,7 +77,18 @@
 
   @media (min-width: $desktop-width) {
     left: 114px;
+    top: 65px;
   }
+}
+
+.form .fieldset__title--radio {
+  @media (min-width: $desktop-width) {
+    top: 20px;
+  }
+}
+
+.form .fieldset__title--checbx {
+  margin-bottom: 24px;
 }
 
 .form .fieldset__container--data {
@@ -91,8 +120,19 @@
 
 .fieldset__input-text[type="text"]:focus,
 .fieldset__input-text[type="tel"]:focus,
-.fieldset__input-text[type="email"]:focus {
-  border-bottom: 2px solid #62d1ba;
+.fieldset__input-text[type="email"]:focus,
+.fieldset__input-text[type="text"]:hover,
+.fieldset__input-text[type="tel"]:hover,
+.fieldset__input-text[type="email"]:hover {
+  border: none;
+  border-bottom: 2px solid $seafoam-blue;
+}
+
+.fieldset__input-text--tel:focus .icon-phone,
+.fieldset__input-text--tel:hover .icon-phone,
+.fieldset__input-text--email:focus .icon-mail,
+.fieldset__input-text--email:hover .icon-mail {
+  fill: $seafoam-blue;
 }
 
 .fieldset__container {
@@ -112,19 +152,27 @@
     margin-left: 217px;
     width: 501px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+    margin-left: 225px;
+  }
 }
 
 .fieldset__title--tel,
 .fieldset__title--email {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .fieldset__container--contacts {
   position: relative;
   margin: 0;
   margin-bottom: 15px;
-  width: 85%;
-  margin-left: 57px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .fieldset__container--checbx {
@@ -138,6 +186,29 @@
 
 .fieldset__wrapper--tel {
   @media (min-width: $tablet-width) {
-    padding: 50px 0;
+    padding: 25px 0 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+  }
+}
+
+.form__fieldset--checbx {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+
+  @media (min-width: $desktop-width) {
+    padding: 45px  25px 30px 40px;
+    flex-direction: row;
+  }
+}
+
+.form .fieldset__title--data {
+  margin-bottom: 25px;
+}
+
+.fieldset__wrapper--textarea {
+  margin-bottom: -35px;
 }

@@ -167,13 +167,27 @@
           </table>
         </div>
       </div>
-      <a class="contacts__map" href="#"><img src="img/map-mobile@1x.jpg" alt="map"></a>
+      <a class="contacts__map" href="#">
+        <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@1x.jpg 2x">
+          <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="map">
+        </picture>
+        </a>
       <a class="btn contacts__btn" href="#">Напишите нам</a>
     </section>
 
     <footer class="footer">
       <div>
-        <a class="footer__logo logo" href="#"><img src="img/logo-mobile.svg" alt="Магазин Мишка"></a>
+        <a class="footer__logo logo" href="#">
+          <svg class="logo-footer" aria-label="Магазин Мишка">
+            <use xlink:href="#logo-footer">
+            </use>
+          </svg>
+        </a>
         <ul class="footer__social social">
           <li>
             <a class="social__btn social__btn--inst" target="_blank" href="https://www.instagram.com/htmlacademy/">

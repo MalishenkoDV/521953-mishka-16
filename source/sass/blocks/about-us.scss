@@ -3,11 +3,12 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 52px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
+    padding: 50px;
   }
 }
 

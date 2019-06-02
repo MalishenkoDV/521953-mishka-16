@@ -1,6 +1,6 @@
 .features {
   @media (min-width: $desktop-width) {
-    padding: 50px 50px 50px 225px;
+    padding: 0 200px 0 174px;
   }
 }
 
@@ -10,10 +10,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
+    padding: 35px 45px 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
+    padding: 0;
   }
 }
 
@@ -25,6 +27,12 @@
 
   @media (min-width: $tablet-width) {
     column-count: 2;
+    padding: 0 50px 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -34,8 +42,15 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 80%;
+    width: 91%;
+    padding: 76px 0 30px;
     font-size: 20px;
+    margin-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 87px 0 20px;
+    width: 90%;
   }
 }
 
@@ -44,8 +59,8 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 10px;
-  left: 10px;
+  top: 35px;
+  left: 8px;
   background-image: url("../img/icon-feature-flower.svg");
   background-repeat: no-repeat;
 }
@@ -55,8 +70,8 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 10px;
-  left: 10px;
+  top: 35px;
+  left: 1px;
   background-image: url("../img/icon-feature-money.svg");
   background-repeat: no-repeat;
 }
@@ -66,8 +81,8 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 10px;
-  left: 10px;
+  top: 40px;
+  left: 8px;
   background-image: url("../img/icon-feature-heart.svg");
   background-repeat: no-repeat;
 }
@@ -77,7 +92,7 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 10px;
+  top: 40px;
   left: 10px;
   background-image: url("../img/icon-feature-ball.svg");
   background-repeat: no-repeat;
@@ -86,10 +101,10 @@
 .features__item--support::after {
   content: "";
   position: absolute;
-  width: 50px;
+  width: 53px;
   height: 50px;
-  top: 10px;
-  left: 10px;
+  top: 40px;
+  left: 0;
   background-image: url("../img/icon-feature-rocket.svg");
   background-repeat: no-repeat;
 }
@@ -99,8 +114,146 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 10px;
+  top: 36px;
   left: 10px;
   background-image: url("../img/icon-feature-gift.svg");
   background-repeat: no-repeat;
+}
+
+/* Tablet */
+
+@media (min-width: $tablet-width) {
+  .features__item--eko::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    left: 8px;
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+  }
+
+  .features__item--suomi::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 26px;
+    left: 1px;
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+  }
+
+  .features__item--likes::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 35px;
+    left: 8px;
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+  }
+
+  .features__item--with-love::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    left: 10px;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+  }
+
+  .features__item--support::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 50px;
+    top: 30px;
+    left: 0;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+  }
+
+  .features__item--gift::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    left: 10px;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item--eko::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 35px;
+    left: 8px;
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+  }
+
+  .features__item--suomi::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 35px;
+    left: 1px;
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+  }
+
+  .features__item--likes::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 40px;
+    left: 8px;
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+  }
+
+  .features__item--with-love::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 40px;
+    left: 10px;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+  }
+
+  .features__item--support::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 50px;
+    top: 40px;
+    left: 0;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+  }
+
+  .features__item--gift::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 36px;
+    left: 10px;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+  }
 }

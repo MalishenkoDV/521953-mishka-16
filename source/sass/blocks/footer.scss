@@ -10,12 +10,13 @@
     padding: 0 50px;
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     width: 1150px;
     margin: auto;
+    background-color: inherit;
   }
 }
 
@@ -40,7 +41,7 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding: 0;
-    margin-left: 150px;
+    margin-left: 140px;
   }
 }
 
@@ -49,6 +50,10 @@
   width: 20px;
   height: 20px;
   padding: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 5px;
+  }
 }
 
 .footer__copyright {
@@ -65,4 +70,8 @@
 .footer__copyright svg {
   vertical-align: middle;
   padding-left: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 23px;
+  }
 }

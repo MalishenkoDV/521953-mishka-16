@@ -185,7 +185,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 67px;
-    margin-left: 112px;
+    margin-left: 0;
   }
 }
 
@@ -260,6 +260,10 @@
   @media (min-width: $tablet-width) {
     margin-left: 87px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 90px;
+  }
 }
 
 .form .fieldset__container--checbx:nth-of-type(2n) {
@@ -269,6 +273,10 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 90px;
   }
 }
 
@@ -322,6 +330,10 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 225px;
   }
 }
 

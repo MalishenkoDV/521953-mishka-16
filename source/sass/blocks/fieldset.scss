@@ -28,7 +28,7 @@
   @media (min-width: $tablet-width) {
     width: 35%;
     margin: 66px 0 60px;
-    padding-left: 78px;
+    padding-left: 140px;
     box-sizing: border-box;
   }
 
@@ -43,7 +43,7 @@
   }
 }
 
-.fielset__legend {
+.fieldset__title {
   text-transform: uppercase;
   font-weight: 700;
   color: #63d1bb;
@@ -58,7 +58,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
     left: 114px;
   }
 }
@@ -73,18 +72,19 @@
   }
 }
 
-.fieldset input[type="text"],
-.fieldset input[type="tel"],
-.fieldset input[type="email"] {
+.fieldset__input-text[type="text"],
+.fieldset__input-text[type="tel"],
+.fieldset__input-text[type="email"] {
   border: none;
   outline: 0;
   background-color: inherit;
   border-bottom: 2px solid $greyish-brown;
+  padding-top: 25px;
 }
 
-.fieldset input[type="text"]:focus,
-.fieldset input[type="tel"]:focus,
-.fieldset input[type="email"]:focus {
+.fieldset__input-text[type="text"]:focus,
+.fieldset__input-text[type="tel"]:focus,
+.fieldset__input-text[type="email"]:focus {
   border-bottom: 2px solid #62d1ba;
 }
 
@@ -94,7 +94,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 114px;
+    margin-left: 225px;
   }
 }
 
@@ -107,8 +107,8 @@
   }
 }
 
-.fielset__legend--tel,
-.fielset__legend--email {
+.fieldset__title--tel,
+.fieldset__title--email {
   margin: 0;
 }
 

@@ -49,6 +49,13 @@
     margin: 0 80px;
     line-height: 1.16;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    padding-top: 150px;
+    margin: 0 200px;
+
+  }
 }
 
 .site-theme {

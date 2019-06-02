@@ -47,6 +47,10 @@
   padding-left: 64px;
 }
 
+.form__fieldset--checbx {
+  display: flex;
+}
+
 .form__label {
   margin: 5px 0;
 
@@ -128,10 +132,6 @@
   }
 }
 
-.form__fieldset--contacts {
-  // width: 85%;
-}
-
 .form__fieldset::before {
   content: "";
   position: absolute;
@@ -150,6 +150,10 @@
   height: 142px;
   border: 2px solid $greyish-brown;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 700px;
+  }
 }
 
 .form__input-text--textarea::placeholder {
@@ -244,14 +248,28 @@
   @media (min-width: $tablet-width) {
     left: 17px;
     top: -3px;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
   }
 }
 
 .form .form__lbl-checbx {
   position: relative;
   padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 87px;
+  }
+}
+
+.form .fieldset__container--checbx:nth-of-type(2n) {
+  @media (min-width: $tablet-width) {
+    padding-left: 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 83px;
+  }
 }
 
 .form__lbl-checbx::before {
@@ -267,8 +285,8 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    width: 54px;
-    height: 52px;
+    width: 49px;
+    height: 47px;
     background-color: $light-grey-bg;
   }
 }
@@ -285,6 +303,11 @@
   background-image: url("../img/icon-tick.svg");
   fill: $greyish-brown;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 3px;
+    left: 15px;
+  }
 }
 
 
@@ -334,11 +357,4 @@
 
 .form__lbl-checbx:last-of-type {
   padding-bottom: 0;
-}
-
-.fieldset__container--checbx {
-  @media (min-width: $tablet-width) {
-    width: auto;
-    display: flex;
-  }
 }

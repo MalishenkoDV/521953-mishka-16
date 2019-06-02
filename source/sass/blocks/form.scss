@@ -49,6 +49,10 @@
 
 .form__fieldset--checbx {
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 225px;
+  }
 }
 
 .form__label {
@@ -71,10 +75,19 @@
   font-size: 17px;
   line-height: 1.06;
   font-weight: 400;
+  background-color: inherit;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 0.95;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    border: none;
+    height: 52px;
+    border-bottom: 2px solid $black;
+    width: auto;
   }
 }
 
@@ -124,11 +137,6 @@
     width: 65%;
     margin-bottom: 0;
     margin-left: 217px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
-    height: 52px;
   }
 }
 

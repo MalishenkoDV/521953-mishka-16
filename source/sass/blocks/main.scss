@@ -73,8 +73,21 @@
   }
 }
 
+.product {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
 .main__wrapper {
-  background-image: url("../../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  height: 6px;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 15%;
+    height: 32px;
+    width: 100%;
+  }
 }

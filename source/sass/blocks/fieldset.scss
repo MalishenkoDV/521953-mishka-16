@@ -27,13 +27,13 @@
 
   @media (min-width: $tablet-width) {
     width: 35%;
-    margin: 66px 0 60px;
+    margin: 66px 0 0;
     padding-left: 140px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
-    width: 320px;
+    width: 258px;
   }
 }
 
@@ -63,12 +63,19 @@
 }
 
 .form .fieldset__container--data {
+  display: flex;
+  flex-direction: column;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     width: 70%;
     margin: 0;
     margin-left: 217px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 225px;
   }
 }
 
@@ -132,15 +139,5 @@
 .fieldset__wrapper--tel {
   @media (min-width: $tablet-width) {
     padding: 50px 0;
-  }
-}
-
-.fieldset__container--data {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 219px;
-    flex-direction: row;
   }
 }

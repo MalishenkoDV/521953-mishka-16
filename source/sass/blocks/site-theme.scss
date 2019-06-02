@@ -54,7 +54,6 @@
     font-size: 55px;
     padding-top: 150px;
     margin: 0 200px;
-
   }
 }
 
@@ -89,7 +88,7 @@
     content: "";
     bottom: -15px;
     width: 100%;
-    background-image: url(../../img/bg-zigzag-fill.svg);
+    background-image: url("../../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     height: 32px;
     z-index: 23;

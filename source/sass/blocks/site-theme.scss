@@ -82,6 +82,13 @@
   }
 }
 
+.site__themes .main__title {
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    padding-top: 90px;
+  }
+}
+
 .site-theme::before,
 .site__themes::before {
   @media (min-width: $tablet-width) {

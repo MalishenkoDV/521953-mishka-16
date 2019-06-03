@@ -11,12 +11,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1150px;
     margin: auto;
     background-color: inherit;
+    box-sizing: border-box;
+    justify-content: space-between;
   }
 }
 
@@ -42,6 +45,10 @@
     border-bottom: none;
     padding: 0;
     margin-left: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 333px;
   }
 }
 

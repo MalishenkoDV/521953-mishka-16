@@ -27,8 +27,8 @@
 
   @media (min-width: $tablet-width) {
     width: 35%;
-    margin: 66px 0 0;
-    padding-left: 140px;
+    margin: 46px 0 0;
+    padding-left: 80px;
     box-sizing: border-box;
   }
 
@@ -59,6 +59,10 @@
 .fieldset__wrapper--radio {
   margin-bottom: 25px;
   margin-top: -3px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -35px;
+  }
 }
 
 .fieldset__title {
@@ -149,7 +153,7 @@
   height: 142px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 217px;
+    margin-left: 165px;
     width: 501px;
   }
 
@@ -199,9 +203,12 @@
   flex-direction: column;
   margin-bottom: 5px;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 45px  25px 30px 40px;
-    flex-direction: row;
   }
 }
 

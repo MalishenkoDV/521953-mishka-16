@@ -53,6 +53,10 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 1.76;
+    margin: 45px 0 65px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin: 45px 0;
   }
 }

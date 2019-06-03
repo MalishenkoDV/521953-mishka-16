@@ -186,7 +186,6 @@
   margin-top: -10px;
 
   @media (min-width: $tablet-width) {
-    width: 700px;
     padding-top: 25px;
     padding-left: 17px;
   }
@@ -216,7 +215,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
-    margin-left: 210px;
+    margin-left: 165px;
   }
 
   @media (min-width: $desktop-width) {
@@ -377,7 +376,7 @@
 
 .form__fieldset-btn {
   @media (min-width: $tablet-width) {
-    margin: 0 50px;
+    margin: 60px 52px 50px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;

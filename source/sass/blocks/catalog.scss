@@ -2,11 +2,22 @@
   padding-left: 30px;
   padding-right: 30px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 0;
-    margin: 0;
+    padding: 100px 0 0 0;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 1150px;
+  }
+}
+
+.catalog__card {
+  @media (min-width: $tablet-width) {
+    margin: 30px 0 55px;
   }
 }

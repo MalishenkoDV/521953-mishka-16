@@ -8,7 +8,7 @@
   }
 }
 
-.site-theme__list1 {
+.site-theme__list--1 {
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 1px;
@@ -16,7 +16,7 @@
   }
 }
 
-.site-theme__list1 li {
+.site-theme__list--1 li {
   @media (min-width: $desktop-width) {
     margin-right: 65px;
     font-weight: 700;
@@ -24,7 +24,7 @@
   }
 }
 
-.site-theme__list2 {
+.site-theme__list--2 {
   @media (min-width: $tablet-width) {
     display: flex;
     position: absolute;

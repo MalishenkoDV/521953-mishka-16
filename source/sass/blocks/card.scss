@@ -71,6 +71,7 @@
 }
 
 .card__characteristics {
+  @include clear-list-style;
   font-size: 13px;
   border-bottom: 1px solid #bbbbbb;
   padding-top: 10px;

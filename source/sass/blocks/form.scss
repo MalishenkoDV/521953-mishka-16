@@ -11,6 +11,7 @@
 }
 
 .form__description {
+  @include clear-list-style;
   width: 242px;
   margin-top: -5px;
   margin-left: auto;
@@ -388,6 +389,7 @@
 }
 
 .form__description-btn {
+  @include clear-list-style;
   text-align: center;
   margin-bottom: 31px;
   font-size: 14px;

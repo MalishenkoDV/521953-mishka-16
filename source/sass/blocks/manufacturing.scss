@@ -71,6 +71,7 @@
 }
 
 .manufacturing__description {
+  @include clear-list-style;
   padding: 25px 33px;
   font-size: 13px;
   line-height: 1.9;

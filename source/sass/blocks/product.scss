@@ -4,6 +4,7 @@
 }
 
 .product__description {
+  @include clear-list-style;
   width: 38%;
   font-size: 15px;
   font-weight: 400;
@@ -186,6 +187,7 @@
 }
 
 .product__price {
+  @include clear-list-style;
   text-align: center;
   margin: 21px;
   font-weight: 700;

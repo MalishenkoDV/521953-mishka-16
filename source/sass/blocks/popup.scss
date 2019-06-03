@@ -30,6 +30,7 @@
 }
 
 .popup__text {
+  @include clear-list-style;
   font-size: 16px;
   margin-bottom: 30px;
 }

@@ -100,13 +100,14 @@
   }
 }
 
-
-
 .form .fieldset__title--data {
+  margin-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     top: 10px;
- }
+  }
 }
+
 .form .fieldset__container--data {
   display: flex;
   flex-direction: column;
@@ -222,10 +223,6 @@
   @media (min-width: $desktop-width) {
     padding: 45px  25px 30px 40px;
   }
-}
-
-.form .fieldset__title--data {
-  margin-bottom: 25px;
 }
 
 .fieldset__wrapper--textarea {

@@ -26,6 +26,7 @@
     font-size: 17px;
     font-weight: 300;
     width: 612px;
+    margin-left: 52px;
     margin-bottom: 61px;
   }
 
@@ -202,7 +203,8 @@
 
 .form__input-text--textarea:hover,
 .form__input-text--textarea:active {
-  border: 2px solid $seafoam-blue;
+  border: none;
+  border-bottom: 2px solid $seafoam-blue;
 }
 
 .form__input-text:hover,
@@ -361,11 +363,12 @@
   background-image: url("../img/icon-tick.svg");
   fill: $greyish-brown;
   background-repeat: no-repeat;
-  baground-size: 50%;
+  background-size: 60%;
 
   @media (min-width: $tablet-width) {
     top: 3px;
     left: 15px;
+    background-size: 80%;
   }
 }
 

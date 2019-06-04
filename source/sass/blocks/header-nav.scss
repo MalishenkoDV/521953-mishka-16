@@ -1,7 +1,7 @@
 .header__item {
   margin: 0;
   border-bottom: 2px solid #ececec;
-  padding: 35px 31px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -39,7 +39,7 @@
   position: absolute;
   display: block;
   top: 27px;
-  right: 41px;
+  right: 20px;
   width: 25px;
   height: 25px;
   font-size: 0;
@@ -77,6 +77,8 @@
 }
 
 .header__list--site .header__link {
+  padding-left: 70px;
+
   @media (min-width: $tablet-width) {
     padding: 0;
     font-size: 15px;
@@ -122,7 +124,7 @@
 
 .header__nav--opened .header__btn-burger {
   top: 27px;
-  right: 41px;
+  right: 27px;
 
   &::before,
   &::after {

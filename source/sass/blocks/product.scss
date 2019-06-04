@@ -4,8 +4,8 @@
 }
 
 .product__description {
-  @include clear-list-style;
-  width: 38%;
+  @include clr-margn-padng;
+  width: auto;
   font-size: 15px;
   font-weight: 400;
   padding: 22px 0;
@@ -26,10 +26,10 @@
 }
 
 .product__buying {
-  width: 38%;
+  width: auto;
   font-size: 15px;
   font-weight: 400;
-  padding: 22px 0;
+  padding: 0 0 22px;
   line-height: 1.6em;
 
   @media (min-width: $tablet-width) {
@@ -82,9 +82,8 @@
 }
 
 .product__denotation {
+  @include clr-margn-padng;
   font-size: 25px;
-  margin: 0;
-  padding: 0;
   line-height: 1em;
 
   @media (min-width: $tablet-width) {
@@ -98,10 +97,9 @@
 }
 
 .product__attribute {
+  @include clr-margn-padng;
   color: $seafoam-blue;
   font-size: 18px;
-  margin: 0;
-  padding: 0;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -187,7 +185,7 @@
 }
 
 .product__price {
-  @include clear-list-style;
+  @include clr-margn-padng;
   text-align: center;
   margin: 21px;
   font-weight: 700;

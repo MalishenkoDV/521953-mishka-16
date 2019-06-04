@@ -17,6 +17,7 @@
 }
 
 .manufacturing__title {
+  @include clr-margn-padng;
   position: relative;
   text-align: left;
   font-size: 17px;

@@ -35,6 +35,7 @@
 }
 
 .site-theme__slogan {
+  @include clr-margn-padng;
   font-size: 27px;
   line-height: 30px;
   text-align: center;

@@ -18,7 +18,7 @@
 
 .feedback__title {
   font-size: 25px;
-  padding: 5px 0 21px;
+  padding: 5px 0 0;
 
   @media (min-width: $tablet-width) {
     order: 0;
@@ -48,7 +48,7 @@
 .feedback__comment p {
   line-height: 2;
   font-size: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;

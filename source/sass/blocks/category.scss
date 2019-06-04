@@ -13,7 +13,7 @@
 }
 
 .category__item {
-  padding: 29px 150px 24px 32px;
+  padding: 2px 150px 10px 32px;
   font-weight: 700;
   position: relative;
   display: block;
@@ -21,6 +21,7 @@
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
+    padding: 29px 150px 24px 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,11 +68,10 @@
 .category__item--01:hover,
 .category__item--01:focus {
   background-color: $seafoam-blue-two;
-  // box-shadow: 0 0 0 5px ;
   box-shadow: inset 0 0 4px  $seafoam-blue-two;
   z-index: 1;
   margin-top: -5px;
-  padding: 19px 150px 34px 30px;
+  padding: 2px 150px 10px 30px;
 }
 
 .category__item--02:hover,

@@ -26,9 +26,9 @@
 }
 
 .main__title {
+  @include clr-margn-padng;
   background-color: $light-grey-bg;
   padding: 65px 30px 70px;
-  margin: 0;
   font-size: 27px;
   text-align: center;
 

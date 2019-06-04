@@ -66,6 +66,7 @@
 }
 
 .fieldset__title {
+  @include clr-margn-padng;
   text-transform: uppercase;
   font-weight: 700;
   color: #63d1bb;
@@ -75,7 +76,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 69px;
+    top: 1px;
     left: 0;
   }
 
@@ -93,8 +94,19 @@
 
 .form .fieldset__title--checbx {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    top: 45px;
+  }
 }
 
+
+
+.form .fieldset__title--data {
+  @media (min-width: $tablet-width) {
+    top: 10px;
+ }
+}
 .form .fieldset__container--data {
   display: flex;
   flex-direction: column;
@@ -103,7 +115,7 @@
   @media (min-width: $tablet-width) {
     width: 70%;
     margin: 0;
-    margin-left: 217px;
+    margin-left: 165px;
     flex-direction: row;
   }
 
